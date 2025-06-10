@@ -1,0 +1,435 @@
+body {
+     background-color: #050B20 !important;
+}
+main {
+    top:0 !important;
+    border-radius: 0 0 50px 50px !important;
+    background-color: #fff;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.header .headerDesk {
+    margin:10px 0 20px 0 !important;
+}
+
+.itemMain {
+    border-radius: 0 !important;
+}
+
+.itemMain .path {
+    margin:30px 0;
+}
+
+.itemMain .itemTop {
+    display: flex;
+    align-items: start;
+    margin-top:40px !important;
+}
+
+.itemMain .itemTop .itemTopLeft {
+    padding:0;
+}
+
+.itemMain .itemTop h2 {
+    width:80%;
+}
+
+.itemMain .itemImage {
+    display: flex;
+    margin-top: 70px;
+}
+
+.itemMain .itemImage .left {
+    width:14%;
+}
+
+.itemMain .itemImage .leftTop {
+    background-color: #405FF2;
+    padding:50px 20px 50px 20px ;
+    border-radius: 25px;
+    color:#fff;
+    margin-bottom:15px;
+    height:60%;
+    width:100%;
+}
+
+.itemMain .itemImage .leftBottom {
+    width: 100%;
+    height:37%;
+    overflow: hidden;
+    border-radius: 25px; /* nếu muốn bo góc ảnh luôn */
+}
+
+.itemMain .itemImage .leftBottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.itemMain .itemImage .center {
+    width:40%;
+    margin-left:15px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.itemMain .itemImage .center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.itemMain .itemImage .right {
+    margin-left:15px;
+    width:40%;
+}
+
+.itemMain .itemImage .right .rightTop {
+    border-radius: 25px;
+    overflow: hidden;
+    width:100%;
+    margin-bottom:15px;
+}
+
+.itemMain .itemImage .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.itemMain .itemImage .right .rightBottom {
+    width:100%;
+    display: flex;
+    gap:15px;
+}
+
+.right .rightBottom .rightBottomLeft {
+    width:45%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.right .rightBottom .rightBottomRight {
+    width:60%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.right .rightBottom .rightBottomLeft:hover img ,
+.right .rightBottom .rightBottomRight:hover img ,
+.itemMain .itemImage .center:hover img ,
+.itemMain .itemImage .leftBottom:hover img ,
+.right .rightTop:hover img  {
+    transform: scale(1.1);
+}
+
+@media (max-width: 997px) {
+    .itemMain .itemImage {
+        display: contents;
+    }
+    .itemMain .itemImage .center ,
+    .itemMain .itemImage .right {
+        width:100%;
+        margin-bottom:20px;
+         margin-left:0;
+    }
+
+    .itemMain .itemImage .left {
+        width:100%; 
+        display: flex;
+        justify-content:space-between;
+        margin-bottom:20px;
+    }
+
+    .itemMain .itemImage .leftTop {
+        background-color: #405FF2;
+        padding:auto;
+        height:100%;
+        width:46%;
+    }
+
+    .itemMain .itemImage .leftBottom {
+        width: 46%;
+        height:100%;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+}
+
+/*  */
+
+.whyChooseUs {
+    margin:50px 0;
+    padding:0;
+    background: none;
+}
+
+.whyChooseUs h2 {
+    margin:30px 0;
+}
+
+/* whyChooseUs end */
+
+.viewTop {
+    display:flex;
+    width:100%;
+    background-color: #EEF1FB;
+    border-radius: 20px;
+}
+
+.viewTop .videoView {
+    width:50%;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+.videoView video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+#myVideo {
+    display: none;
+}
+
+.btn-start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 16px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border:none;
+    border-radius: 50px;
+    background-color: #fff;
+    animation: pulse 1.2s infinite ease-in-out;
+}
+
+.btn-stop {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    display: none;
+    padding: 3px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn-start:hover , .btn-stop:hover {
+    background-color: #ccc;
+}
+
+.viewTop .textView {
+    padding:80px;
+    width:50%
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  font-size: 14px;
+}
+
+.check-icon {
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(13, 13, 43, 0.1);
+  flex-shrink: 0;
+}
+
+.check-icon svg {
+  width: 10px;
+  height: 10px;
+}
+
+
+
+.viewTop .textView > button {
+    padding:20px 30px 50px 30px;
+    border:none;
+    outline: none;
+    background-color: #405FF2;
+    border-radius: 20px;
+    color:#fff;
+    margin-top:40px;
+    transition: transform 0.3s ease !important;
+}
+
+.viewTop .textView > button img {
+    width:14px;
+    margin-left:8px;
+}
+
+.viewTop .textView button:hover {
+    background-color: #91a0e9;
+    transform: scale(0.95);
+}
+
+.viewBottom {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    margin:30px;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+@media (max-width: 768px) {
+    .viewTop {
+        display:contents;
+    }
+
+    .viewTop .videoView ,
+    .viewTop .textView {
+        width:100%;
+    }
+
+    .viewTop .textView {
+        padding:80px 0;
+    }
+    
+    .itemMain {
+        gap:0 !important;
+    }
+    
+}
+
+/*  */
+.premiumBrands ,
+.ourTeam  {
+    margin: 80px 0;
+}
+
+.cusSay {
+     margin: 0 30px;
+     padding:60px 120px;
+     background-color: #F9FBFC;
+     border-radius: 5px;
+}
+
+.cusSay .slideCusSay .itemSlide {
+    background-color: #fff !important;
+}
+
+.slideCusSay .itemSlide .itemSlideTop {
+    align-items: start !important;
+    justify-content:space-between;
+    margin-bottom:40px !important;
+}
+
+.slideCusSay .itemSlide .topRight i {
+    font-size: 30px;
+}
+
+.cusSay .slideCusSay .itemSlide p {
+    display:contents;      
+}
+
+.itemSlideBottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top:40px;
+}
+
+.itemSlideBottom .avt img {
+    width: 40px;       
+    height: 40px;
+    border-radius: 50%;   
+    object-fit: cover;   
+    border: 2px solid #ccc; 
+}
+
+.itemSlideBottom .name h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.itemSlideBottom .name p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.custom-next ,
+.custom-prev {
+    position: absolute;
+    top:90%;
+}
+
+@media (max-width: 768px) {
+    .cusSay {
+        padding:60px 20px;
+    }
+
+    .slideCusSay .itemSlide .itemSlideTop {
+        display:block !important;
+    }
+}
+
+/*  */
+
+.faqsPage {
+    padding:0 200px;
+    margin:50px 0;
+}
+
+.faqsPage >.title {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+       .title {
+        display: block !important;
+    }
+
+    .itemPremiumBrands  {
+        margin-top:30px !important;
+        
+    }
+
+    .premiumBrands, .ourTeam, .blog {
+          margin:0 !important;
+    }
+
+    .faqsPage {
+        padding:0 30px;
+    }
+}
+
+
+

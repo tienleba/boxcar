@@ -1,0 +1,1025 @@
+main {
+   position: relative;
+   top:-70px;
+   z-index: 0;
+   overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom:100px;
+}
+
+.slideBanner {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+.slideBanner {
+    width: 100%;
+    height:50vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10% !important; /* bạn có thể tùy chỉnh */
+  left:-30% !important;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 36px;
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+
+.content .contentLeft {
+    position:absolute;
+    top: 45%;
+    left: 11%;
+    color:#fff;
+}
+
+.contentLeft .limitedText {
+    width: 360px;           
+    white-space: normal;    
+    word-break: break-word; 
+    line-height: 1.4;
+    font-size: 50px;
+}
+
+.contentRight {
+    position: absolute;
+    bottom:12%;
+    right:5%;
+    padding:30px;
+    color:#fff;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contentRight .itemContentRight > img {
+    width:20%;
+    margin-bottom: 20px;
+}
+
+.contentRight p {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top:-15px;
+}
+
+.contentRight h6 {
+    font-size: 20px;
+    margin-top:-20px;
+}
+
+.contentRight button {
+    border:none;
+    border-radius: 20px;
+    padding:20px;
+    margin-top:20px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.contentRight button:hover {
+    transform: scale(0.9);
+}
+
+.itemContentRight {
+    margin-bottom:20px;
+}
+
+.itemContentRight button {
+    font-weight: 700;
+    padding:20px 30px 65px 30px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.contentRight .itemContentRight button > img {
+    width: 14px;
+}
+
+.title a img {
+    margin-left:8px;
+    width: 14px;
+}
+
+/* Ẩn mặc định các phần tử cần animation */
+.swiper-slide .contentLeft {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.swiper-slide .contentRight {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 0.8s ease, transform 0.6s ease;
+}
+
+.swiper-slide-active .contentLeft ,
+.swiper-slide-active .contentRight  {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+@media (max-width: 1332px) { 
+    main {
+        top:-92px;
+    }
+
+     .content .contentRight {
+        display:none;
+    }
+}
+
+@media (max-width: 1296px) { 
+    main {
+        top:-130px;
+    }
+}
+
+@media (max-width: 840px) { 
+    main {
+        top:-136px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        top:0;
+        outline: none;
+        overflow-x:hidden;
+    }
+
+    .contentLeft .limitedText ,
+    .contentLeft > h3  {
+        font-size: 18px !important;
+    }
+
+    .content .contentLeft {
+        top:20% !important;
+    }
+
+    .content .contentRight {
+        display:none;
+    }
+
+    .exploreAllVehicles .tabContent {
+        margin-left:-10px !important;
+    }
+}
+
+/* exploreAllVehicles start */
+
+.exploreAllVehicles {
+    padding:20px 0 20px 170px;
+}
+
+.exploreAllVehicles .title {
+    padding-right:170px;
+}
+
+.shopBoxCar {
+    padding:20px 170px;
+}
+
+.exploreAllVehicles .title ,
+.shopBoxCar .title ,
+.browseByType .title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.exploreAllVehicles .title h2 ,
+.shopBoxCar .title h2  {
+    margin-left:-13px;
+    font-weight: 800;
+}
+
+.exploreAllVehicles .title a ,
+.shopBoxCar .title a {
+    text-align: right;
+    text-decoration: none;
+    color:#050B20;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.shopBoxCar .tabContent {
+    margin-left:10px;
+}
+
+.exploreAllVehicles .tabContent {
+    margin-left:-20px;
+}
+
+.exploreAllVehicles .nav ,
+.shopBoxCar .nav {
+    margin-left:-12px;
+}
+
+.exploreAllVehicles .nav-tabs ,
+.shopBoxCar .nav-tabs {
+    border-bottom: none;
+}
+
+.exploreAllVehicles .nav-tabs  li ,
+.shopBoxCar .nav-tabs  li {
+    margin-left:-15px;
+}
+
+.exploreAllVehicles .nav-tabs .nav-link ,
+.shopBoxCar .nav-tabs .nav-link {
+    border: none !important;
+    background: none !important;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 16px;
+}
+
+.exploreAllVehicles .nav-tabs .nav-link.active ,
+.shopBoxCar .nav-tabs .nav-link.active {
+    border: none !important;
+    background: none !important;
+    border-radius: 0 !important;
+}
+
+.exploreAllVehicles .nav-tabs .nav-link.active::after ,
+.shopBoxCar .nav-tabs .nav-link.active::after  {
+    content: "";
+    position: absolute;
+    bottom: -4px; 
+    left: 14%;
+    width: 74%;
+    height: 2px;
+    background-color: #2962ff;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.exploreAllVehicles .nav-tabs .nav-link:hover::after ,
+.shopBoxCar .nav-tabs .nav-link:hover::after  {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 31%;
+    width: 38%;
+    height: 2px;
+    background-color: rgba(41, 98, 255, 0.4);
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+/* slideInsock start */
+
+.tabContent {
+    margin-top:20px;
+}
+
+.tabContent .slideInsock {
+    text-align: center;
+    font-size: 18px;
+    height: 180px;
+    background: #373948;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden; 
+    position: relative;
+    width:420px;
+}
+
+.tabContent .slideInsock:hover .image img {
+    transform: scale(1.05);
+}
+
+.tabContent .slideInsock .image {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tabContent .slideInsock .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px 0 0 25px; 
+    transition: transform 0.3s ease;
+}
+
+.tabContent .slideInsock .itemSlideInsock {
+    text-align: left;
+    padding:40px 20px 20px 20px;
+    margin-right:20px;
+    color:#ffffff;
+    width:60%;
+    transition: width 0.5s ease; 
+    white-space: nowrap;   
+    overflow: hidden;        
+    text-overflow: ellipsis;  
+}
+
+.tabContent .slideInsock button {
+    position: absolute;
+    top:5%;
+    left:3%;
+    background-color:#f6f6f9;
+    border:none;
+    outline: none;
+    padding:4px 9px 0 9px;
+    text-align: center;
+    border-radius: 70px;
+}
+
+.tabContent .slideInsock:hover .itemSlideInsock {
+   width:100%;
+}
+
+.tabContent .slideInsock .itemSlideInsock p {
+    font-size: 10px;
+    font-weight: 200;
+     white-space: nowrap;   
+    overflow: hidden;        
+    text-overflow: ellipsis;  
+}
+
+.tabContent .slideInsock .itemSlideInsock .miniItemSlideInsock {
+    display: flex;
+    margin-top:-10px;
+}
+
+.tabContent .slideInsock .itemSlideInsock .miniItemSlideInsock img {
+    width:15px;
+    height:fit-content;
+    margin-right:10px;
+}
+
+.tabContent .slideInsock .miniItemSlideInsock2  {
+    margin-top:4px !important;
+}
+
+.tabContent .slideInsock .miniItemSlideInsock2 p {
+    font-weight: 400;
+    font-size: 14px !important;
+}
+
+.tabContent .slideInsock .miniItemSlideInsock2 a {
+   text-align: right;
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 14px;
+}
+
+.custom-next {
+    position:absolute;
+    top:74%;
+    left:100px;
+    width: 50px;
+    height: 35px;
+    border:2px #918c8c solid;
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.custom-prev {
+    position:absolute;
+    top:74%;
+    left:0;
+    width: 50px;
+    height: 35px;
+    border:2px #918c8c solid;
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.custom-next:hover,
+.custom-prev:hover {
+    background-color: rgba(198, 28, 28, 0.7);
+}
+
+@media (max-width: 992px) {
+    .exploreAllVehicles ,
+    .shopBoxCar {
+        padding:20px 10px;
+        margin-left:20px;
+    }
+
+    .banner .swiper {
+        padding-bottom:0;
+    }
+
+    .browseByType ,
+    .cusSay {
+        margin:20px 10px !important;
+    }
+
+    .browseByType .title ,
+    .cusSay .title ,
+    .blog .title {
+        margin-bottom:30px;
+    }
+
+       .title {
+        display: block !important;
+    }
+
+    .itemPremiumBrands  {
+        margin-top:30px !important;
+    }
+}
+
+/* whyChooseUs start */
+
+.whyChooseUs {
+    margin:30px;
+    padding:70px 128px;
+    background-color: #F9FBFC;
+    border-radius: 25px;
+}
+
+.whyChooseUs .itemWhyChooseUs {
+    display: flex;
+    margin-top:25px;
+}
+
+.whyChooseUs .miniItemWhyChooseUs img {
+    width: 45px;
+    height:55px;
+    margin-bottom:20px;
+}
+
+.whyChooseUs .miniItemWhyChooseUs p {
+    font-size: 15px;
+}
+
+@media (max-width: 992px) {
+    .whyChooseUs {
+        margin:10px;
+        padding:30px 10px;
+    }
+
+    .whyChooseUs h2 {
+        margin-bottom:30px;
+    }
+}
+
+/* Browse by Type Start */
+.browseByType {
+    margin:20px 160px;
+}
+
+.browseByType a {
+    text-decoration: none;
+    text-align: right;
+    padding:0;
+    color:#000;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.browseByType .itemBrowseByType {
+    margin-top:25px;
+}
+
+.browseByType .itemBrowseByType .itemBrowseByTypeTop ,
+.browseByType .itemBrowseByType .itemBrowseByTypeBottom  {
+    display:flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin:20px 0;
+}
+
+.browseByType .itemBrowseByType .itemBrowseByTypeTop .miniIiem {
+    width: 49% !important;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px; 
+}
+
+.browseByType .miniIiem .imgMiniIiem {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.6s ease-in-out;
+    object-fit: cover;
+}
+
+.browseByType .miniIiem:hover .imgMiniIiem {
+    transform: scale(1.1);
+}
+
+.browseByType  .miniIiem button {
+    position: absolute;
+    bottom: 5%;
+    left:5%;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffff;
+    padding:3px 25px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.browseByType .miniIiem button:hover {
+    transform: scale(0.95);
+    background-color: #d1b6b6;
+}
+
+.browseByType .itemBrowseByType .itemBrowseByTypeBottom .miniIiem {
+    width: 32% !important;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px; 
+}
+
+.itemBrowseByTypeMob {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    .browseByType {
+        margin:20px 10px;
+    }
+
+    .itemBrowseByType {
+        display: none;
+    }
+
+    .itemBrowseByTypeMob {
+        display: block;
+    }
+
+    .itemBrowseByTypeMob .miniIiem {
+        margin-bottom: 20px;
+    }
+
+    .shopBoxCar .tabContent {
+        margin-left: 30px;
+    }
+}
+/* Browse by Type End */
+
+/* Shop BoxCar Your Way Start */
+.shopBoxCar .itemTabContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopBoxCar .itemTabContent .miniItemTabConten li a {
+    color: #000 !important;
+}
+
+.shopBoxCar .itemTabContent .miniItemTabConten li:hover a {
+    color: #f05555 !important;
+}
+/* Shop BoxCar Your Way End */
+
+/* Explore Our Premium Brands Start */
+
+.premiumBrands ,
+.ourTeam ,
+.blog {
+    margin:20px 160px;
+}
+
+.premiumBrands .title ,
+.ourTeam .title ,
+.blog .title {
+    display: flex;
+    justify-content:space-between;
+}
+
+.premiumBrands .title a ,
+.ourTeam .title a ,
+.blog .title a  {
+    text-align: right;
+    padding-right:18px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom:60px;
+}
+
+.premiumBrands .itemPremiumBrands {
+    display: flex;
+    margin-top:30px;
+    gap:20px;
+}
+
+.premiumBrands .itemPremiumBrands a { 
+    text-align: center;
+    padding:20px 0;
+    border:#d1b6b6 2px solid;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out;
+    width:15%;
+}
+
+.premiumBrands .itemPremiumBrands a:hover {
+    transform: scale(0.95);
+}
+
+.premiumBrands .itemPremiumBrands a h6 {
+    margin-top:10px;
+    color:#000;
+}
+
+@media (max-width: 992px) {
+    .premiumBrands ,
+    .ourTeam ,
+    .blog {
+        margin:20px !important;
+    }
+
+    .premiumBrands .itemPremiumBrands a { 
+        width:28% !important;
+        padding:0;
+    }
+}
+/* Explore Our Premium Brands End */
+
+/* Auto Loan Calculator Start */
+.loanCalculator {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EEF1FB;
+    border-radius: 30px;
+    margin: 50px 20px;
+    overflow: hidden;
+}
+
+/* Bên trái */
+.loanCalculator .loanCalLeft {
+    flex: 1 1 50%;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loanCalculator .loanCalLeft h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.loanCalculator .loanCalLeft p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Nhóm input */
+.inputLoancal {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.inputLoan {
+    position: relative;
+    flex: 1 1 45%;
+    min-width: 120px;
+}
+
+.inputLoan p {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    font-size: 12px;
+    color: #a0a0a0;
+    margin: 0;
+    z-index: 2;
+}
+
+.inputLoan input {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    padding: 20px 12px 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+
+/* Button */
+.buttonLoancal {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonLoancal button {
+    width: 100%;
+    height: 50px;
+    background-color: #405FF2;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttonLoancal button:hover {
+    background-color: #5f75e8;
+}
+
+.buttonLoancal button img {
+    width:14px;
+    margin-left:8px;
+}
+
+/* Bên phải */
+.loanCalculator .loanCalRight {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loanCalculator .loanCalRight img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 30px 30px 0;
+}
+
+/* Responsive cho Tablet */
+@media (max-width: 992px) {
+    .loanCalculator .loanCalLeft {
+        padding: 40px 30px;
+    }
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 768px) {
+    .loanCalculator {
+        flex-direction: column;
+    }
+
+    .loanCalculator .loanCalLeft,
+    .loanCalculator .loanCalRight {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .loanCalculator .loanCalRight img {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .inputLoancal {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inputLoan {
+        width: 100%;
+    }
+
+    .buttonLoancal {
+        margin-top: 10px;
+    }
+}
+
+/* Auto Loan Calculator End */
+
+/* What our customers say Start */
+.cusSay {
+    margin:70px 0 70px 155px;
+}
+
+.cusSay .title {
+    display: flex;
+    align-items:end;
+    font-size: 15px;
+    margin-bottom:30px;
+}
+
+.cusSay .itemSlide{
+    background-color: #F9FBFC;
+    padding:20px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.cusSay .itemSlideTop {
+    display: flex;
+    gap:40px;
+    margin-bottom:10px;
+
+}
+
+.cusSay .itemSlideTop .topLeft {
+    display: flex;
+}
+
+.cusSay .itemSlideTop .topLeft img ,
+.cusSay .itemSlideTop .topRight img {
+    height:15px;
+}
+
+.cusSay .itemSlideTop .topRight {
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+.cusSay .itemSlideBottom p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;     
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;          
+    max-height: 3em;             
+}
+
+@media (max-width: 768px) {
+    .cusSay {
+        margin: 40px 10px 0 10px;
+    }
+}
+/* What our customers say End */
+
+/* Out Team Start */
+.ourTeam .itemOurTeam {
+    display:flex;
+    justify-content: center;
+    margin:20px 0;
+}
+
+.ourTeam .itemOurTeam .miniItemOurTeam {
+    text-decoration: none;
+    color:#000;
+    width:25%;
+    padding:20px;
+    border-radius: 15px;
+    transition: border 0.1s ease, box-shadow 0.1s ease;
+}
+
+.ourTeam .itemOurTeam .miniItemOurTeam:hover {
+    border:#918c8c 2px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ourTeam .itemOurTeam img {
+    margin-bottom :10px;        
+    object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+    .ourTeam .itemOurTeam .miniItemOurTeam {
+        width:50%;
+    }
+}
+/* out team end */
+
+/* shopUsedCars Start */
+.shopUsedCars {
+   position: relative;
+}
+
+.shopUsedCars .itemShopUsedCars {
+    width:65%;
+    height:90%;
+    position: absolute;
+    top:0;
+    left:5%;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.shopUsedCars .itemShopUsedCars .miniItem {
+    width:80%;
+}
+
+.shopUsedCars .itemShopUsedCars p {
+    margin:20px 0 18px 0;
+}
+
+.shopUsedCars .itemShopUsedCars .buttonShop button {
+    width: 35%;
+    height:60px;
+    border-radius: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-right:20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.shopUsedCars .itemShopUsedCars .buttonShop button:hover {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1240px) { 
+    .shopUsedCars .itemShopUsedCars {
+        width: 61%;
+        top: 6%;
+        left: 6%;
+    }
+}
+
+@media (max-width: 892px) {
+    .shopUsedCars {
+        display:none;
+    }
+}
+
+/* shopUsedCars end */
+
+.blog .itemBlog {
+    display: flex;
+}
+
+.blog .itemBlog .miniItemBlog {
+    text-decoration: none;
+    color:#000;
+    width:33%;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.blog .itemBlog .miniItemBlog img {
+    margin-bottom :10px;
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 15px;
+}
+
+.blog .textCenter span {
+    color: #918c8c;
+}
+
+@media (max-width: 768px) {
+    .blog .itemBlog .miniItemBlog {
+        width:100%;
+    }
+}
+ 
+
+
+
+

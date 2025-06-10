@@ -1,0 +1,64 @@
+.itemMain {
+    display:grid;
+    gap:40px;
+}
+
+.itemMain .faqsPage > .title {
+    display: flex;
+    justify-content: center;
+}
+
+.itemGeneral {
+    display: flex;
+    justify-content: center;
+}
+
+.itemGeneral .miniItemGeneral {
+    width:60%;
+    padding:10px;
+}
+
+.itemGeneral .miniItemGeneral .collapses {
+    padding:10px; 
+}
+
+.itemGeneral .miniItemGeneral .collapses:hover {
+    background-color: #F9FBFC;
+}
+
+.miniItemGeneral .collapses .title {
+    display: flex;
+    justify-content:space-between;
+    align-items:end;
+}
+
+.collapses .toggleCollapse {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.collapses .contentCollapse {
+    margin-top: 10px;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    .miniItemGeneral .collapses .title h5{
+        width:90%;
+    }
+    .itemGeneral .miniItemGeneral {
+        width:95%;
+    }
+
+    .miniItemGeneral .collapses .title {
+        align-items:start;
+    }
+
+    .collapses .toggleCollapse {
+       width:10%;
+    }
+}

@@ -1,0 +1,905 @@
+.row {
+    margin:0 !important;
+    padding-right:0 !important;
+    padding-left:0 !important;
+}
+
+.header {
+    margin:0 !important;
+}
+
+.header .headerDesk {
+    background-color: #050B20 !important;
+    padding:0 20px !important;
+}
+
+.headerDesk .headerRight button {
+    background-color: #fff !important;
+    color:#050B20 !important;
+}
+
+.headerDesk .mainNav {
+    gap:0;
+}
+
+.headerDesk .header .mainNav .navLink {
+    padding: 8px 0px !important;
+}
+
+.headerDesk .header .gab {
+    margin:0 30px;
+}
+
+.footerTopRight .joinBoxCar {
+    position: relative;
+}
+
+.footerTopRight button {
+    width: 19%;
+    padding: 10px 0;
+    position: absolute;
+    top:0;;
+    right:2%;
+}
+
+/* popup video Start */
+
+.popupVideo {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popupVideo.active {
+    display: flex;
+}
+
+.videoContent {
+    position: relative;
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+    background: none;
+    border:none;
+}
+/* popup video end */
+
+/* end footer header */
+/* /////////////////////////////////////////////// */
+/* main start */
+main {
+    background-color: #050B20 ;
+    padding-top:50px;
+}
+
+main .itemMain {
+    background-color: #FFFFFF;
+    min-height: 500px;
+    border-radius: 60px;
+    padding:60px 120px;
+    overflow: hidden;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+    .imageCenter {
+        gap:15px;
+    }
+}
+
+@media (max-width: 1200px) {
+     main .itemMain {
+        padding:60px 30px;
+    }
+}
+
+@media (max-width: 892px) {
+    main {
+        padding-top:0;
+    }
+    .row {
+        margin:0 !important;
+    }
+    main .itemMain {
+        padding:40px 20px;
+    }
+
+    .itemTop .itemTopLeft .button button {
+        width:45% !important;
+    }
+
+    .itemTop .itemTopRight {
+        margin-top:30px;
+    }
+
+    .itemTop .itemTopRight .itemButton ,
+    .itemTop .itemTopRight h2 ,
+    .itemTop .itemTopRight h5 {
+       justify-content: left !important;
+    }
+
+    .imageCenter img ,
+    .imageCenter .imageRight1 ,
+    .imageCenter .imageLeft {
+        border-radius: 25px !important;
+    }
+
+    .addReview > button {
+        width:100% !important;
+    }
+
+    .itemCenterRight .profiles {
+        width:100% !important;
+        height:440px;
+    }
+
+    .itemRelateList {
+        gap:15px !important;
+    }
+
+    .itemRelateList .miniItemList .imgAvt {
+        height :145px;
+    }
+
+    .itemRelateList .miniItemList .miniList  {
+        padding:5px !important;
+    }
+    
+
+    .itemRelateList .miniItemList .miListBottom h5 {
+        font-size: 1rem !important;
+    }
+
+    .itemRelateList .miniItemList .miListBottom a ,
+    .itemRelateList .miniItemList .texture p ,
+    .itemRelateList .miniItemList .miListBottom h5 ,
+    .itemRelateList .miniItemList .miListBottom del {
+        font-size: 12px !important;
+    }
+
+    .miniItemList .miListBottom a img {
+        width:9px !important;
+        margin-left:4px !important;
+    }
+
+    .reviews .reviewsTop ul {
+        padding-left:3rem;
+    }
+
+    .addReview .itemAddReview {
+        display: block !important;
+    }
+
+    .addReview .itemAddReview ul{
+        width:100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .itemRelateList .miniItemList .imgAvt {
+        height: 136px !important;
+    }
+
+    .itemCenterLeft .itemInput .inputItem {
+        width:100% !important;
+    }
+}
+
+/* mobile */
+
+.itemMain .path {
+    margin:30px 0;
+}
+
+.itemMain .path a {
+    text-decoration: none;
+}
+
+.itemMain  h1 {
+    font-weight: 700;
+}
+
+.itemMain .itemTop .itemTopLeft .button {
+    display: flex;
+    gap:20px;
+}
+
+.itemMain .itemTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.itemTop .itemTopLeft .button button {
+    color:#405FF2;
+    border: none;
+    border-radius: 20px;
+    background-color: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px 15px;
+    gap:7px;
+    background-color: #E9F2FF;
+    width:20%;
+}
+
+.itemTopLeft .button button img {
+    height:15px;
+}
+
+.itemTop .itemTopRight .itemButton {
+    display: flex;
+    justify-content: right;
+    gap:30px;
+}
+
+.itemTop .itemTopRight .button button {
+    border: none;
+    padding:8px 14px;
+    border-radius: 100px;
+}
+
+.itemTop .itemTopRight h2 {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;;
+}
+
+.itemTop .itemTopRight h5 {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    align-items: center;
+    gap:15px;
+}
+
+/* itemTop end */
+/* ////////////////////////////////////////// */
+/* imageCenter */
+.imageCenter {
+    display:flex;
+    margin:40px 0 !important;
+}
+
+.imageCenter .imageLeft {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px 0 0 25px;
+    padding:0 !important;
+}
+
+.imageCenter .imageLeft img {
+    border-radius: 25px 0 0 25px;
+    transition: transform 1s ease;
+}
+
+.imageCenter .imageLeft img:hover {
+    transform: scale(1.2);
+}
+
+.imageCenter .imageLeft button {
+    position:absolute;
+    left:5%;
+    bottom:5%;
+    border:none;
+    outline: none;
+    padding:5px 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    transition: transform 0.6s ease , background-color 0.6s ease;
+}
+
+.imageCenter .imageLeft button:hover {
+    background-color: #f3cfcf;
+    transform: scale(1.05);
+}
+
+.imageCenter .imageRight {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content:right;
+}
+
+.imageCenter .imageRight .imageRight1 {
+    width:48%;
+    object-fit: cover;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+
+.imageCenter .imageRight .imageRight1 img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    overflow: hidden;
+}
+
+.imageCenter .imageRight .imageRight1:hover img {
+    transform: scale(1.2);
+}
+
+.imageCenter .imageRight .imageRadius1 {
+    border-radius: 0 25px 0 0;
+}
+
+.imageCenter .imageRight .imageRadius2 {
+    border-radius: 0 0 25px 0;
+}
+
+/* imageCenter end */
+/* ////////////////////////////////////////////// */
+/* itemCenter start */
+.itemCenter {
+    display: flex;
+}
+
+.itemCenter .itemCenterLeft .itemCarOverview {
+    display: flex;
+    gap:40px;
+}
+
+.itemCenter .itemCenterLeft ul li {
+    display: flex;
+    font-size: 13px;
+}
+
+.itemCenter .itemCenterLeft .description {
+    margin-bottom:50px;
+}
+
+/* description start */
+.itemCenter .itemCenterLeft h2 ,
+.itemCenter .itemCenterLeft .features h2 {
+    margin:30px 0;
+}
+
+.itemCenter .itemCenterLeft .description p {
+    max-height:290px;
+    overflow-y: auto;
+}
+
+.itemCenterLeft .description .buttonDescription {
+    display: flex;
+    gap:20px;
+}
+
+.itemCenterLeft .description .buttonDescription button {
+    padding:10px 28px;
+    border:none;
+    background-color: #405FF21A;
+    color: #405FF2;
+    border-radius: 10px;
+}
+
+/*  */
+.itemCenter .itemCenterLeft .features ul li {
+    margin:18px 0;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.itemCenter .itemCenterLeft .features ul li i {
+    background-color: #405FF21A;
+    padding:4px 5px;
+    font-size: 10px;
+    border-radius: 50%;
+    color:#405FF2;
+
+}
+
+.itemCenterLeft .features .itemFeatures {
+    display: flex;
+    justify-content:space-between;
+}
+
+.itemCenterLeft .location a {
+    text-decoration: none;
+}
+
+.itemCenterLeft .itemInput {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;     
+}
+
+.itemCenterLeft .itemInput .inputItem {
+    width:46% ;
+}
+
+.itemCenterLeft .itemInput .inputItem p {
+    left:22px;
+}
+
+.itemCenterLeft .itemInput input {
+    width: 100%;
+    min-width: 200px; 
+    min-height: 55px;
+    border:1px #cbc8c8 solid;
+    border-radius: 10px;
+    outline: none;
+    padding:30px 10px 10px 10px;
+}
+
+input::placeholder {
+    color: #050B20;
+}
+
+.itemCenterLeft button {
+    background-color: #405FF2;
+    border: none;
+    border-radius: 10px;
+    padding:15px 30px;
+    margin:20px 0;
+    color:#fff;
+}
+
+.progress-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.progress-text .value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.progress-text .label {
+    font-size: 14px;
+    color: #666;
+}
+
+.reviews .reviewsTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews .reviewsTop .topReview1 {
+    padding-right: 25px;
+}
+
+.reviews .reviewsTop .topReview2 {
+    padding-left: 25px;
+}
+
+.reviews .reviewsTop ul li {
+    display: flex;
+    margin-bottom: -25px;
+    justify-content: space-between;
+}
+
+.reviews .reviewsTop ul li .itemRight span {
+    color: #405FF2;
+}
+
+.reviews .reviewsBottom {
+    max-height: 430px;
+    overflow-y: auto;
+    margin:30px;
+}
+
+.reviews .reviewsBottom .itemCmt {
+    margin:30px 0;
+}
+
+.reviews .reviewsBottom .itemCmt .imgItemCmt {
+    display:flex;
+    align-items:end;
+    gap:20px;
+}
+
+.reviews .reviewsBottom .itemCmt .imgItemCmt img {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+.starRating {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.starRatingLeft {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.starRatingBackground {
+  color: #ccc;
+}
+
+.starRatingForeground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #405FF2;
+  pointer-events: none;
+}
+
+.starRatingValue {
+  margin-left: 8px;
+}
+
+/* reviews end */
+
+/* Add Review start */
+.addReview .itemAddReview {
+    display: flex;
+    gap:20%;
+}
+
+.addReview .itemAddReview ul{
+    width:35%;
+}
+.addReview .itemAddReview ul li {
+    position: relative;
+    display: flex;
+    justify-content:space-between
+}
+
+.textInput .textInputTop {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.inputItem {
+    width:100%;
+    position: relative;
+}
+
+.inputItem p {
+    position: absolute;
+    top:10px;
+    left:10px;
+    color:#8a8484;
+}
+
+.textInput .textInputTop input {
+    width:100%;
+    padding:30px 10px 10px 10px;
+    border-radius: 10px;
+    background: none;
+    border: 1px #cbc8c8 solid;
+    outline: none;
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  color: #333;
+  margin: 20px 0;
+  gap:15px;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.textInputBottom textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical; 
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.addReview > button {
+    width:20%;
+    padding:20px;
+    background-color: #405FF2;
+    border:none;
+    border-radius: 15px;
+    color:#fff;
+    margin:20px 0;
+}
+
+/* ADD REVIEW END */
+
+/* RelateList start */
+.relateList .title {
+    margin:40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.relateList .title a {
+    text-decoration: none;
+    text-align: right;
+    color:#000;
+}
+
+.itemRelateList {
+    position: relative;
+    padding-bottom: 100px !important;
+}
+
+.itemRelateList .miniItemList {
+    position: relative;
+    overflow: hidden; 
+    width:100%;
+}
+
+.itemRelateList .miniItemList .buttonItemList1 {
+    position: absolute;
+    top:5%;
+    left:3%;
+    background-color:#405FF2;
+    color: #fff;
+    border:none;
+    outline: none;
+    padding:3px 10px;
+    border-radius: 15px;
+}
+
+.itemRelateList .miniItemList .buttonItemList2 {
+    position: absolute;
+    top:5%;
+    right:3%;
+    background-color:#f6f6f9;
+    border:none;
+    outline: none;
+    padding:5px 11px;
+    border-radius: 60px;
+}
+
+.itemRelateList .miniItemList .buttonItemList2:hover {
+    transform:scale(1.05);
+    background-color: #ccccf1;
+}
+
+.itemRelateList .miniItemList .miniList {
+    padding:20px;
+    border: #818181 1px solid;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    font-size: 15px;
+}
+
+.itemRelateList .miniItemList .miniList p {
+    white-space: nowrap;        
+    overflow: hidden;          
+    text-overflow: ellipsis;  
+}
+
+.itemRelateList .miniItemList .imgAvt {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.itemRelateList .miniItemList .imgAvt img {
+    overflow: hidden;
+    transition: transform 2s ease;
+}
+
+.itemRelateList .miniItemList .imgAvt:hover img {
+    transform: scale(1.3) rotate(15deg);
+}
+
+.itemRelateList .miniItemList .texture {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin:-10px 0 -15px 0;
+}
+
+.itemRelateList .miniItemList .miListBottom {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:30px;
+}
+
+.itemRelateList .miniItemList .miListBottom h5 {
+    font-weight: 700;
+}
+
+.itemRelateList .miniItemList .miListBottom a {
+    text-decoration: none;
+}
+
+.miniItemList .miListBottom a img {
+    width: 14px;
+    margin-left:8px;
+}
+
+
+.custom-next {
+    position:absolute;
+    top:90%;
+    left:100px;
+    width: 50px;
+    height: 35px;
+    border:2px #918c8c solid;
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.custom-prev {
+    position:absolute;
+    top:90%;
+    left:0;
+    width: 50px;
+    height: 35px;
+    border:2px #918c8c solid;
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.custom-next:hover,
+.custom-prev:hover {
+    background-color: rgba(198, 28, 28, 0.7);
+}
+
+/* RelateList End */
+/* itemCenterLeft end */
+
+/* itemCenterRight Start */
+.itemCenter .itemCenterRight {
+    display: flex;
+    justify-content: right;
+}
+
+.itemCenter .itemCenterRight .profiles {
+    border: 2px #cbc8c8 solid;
+    width:90%;
+    height:480px;
+    border-radius: 15px;
+    padding:25px;
+    font-weight: 500;
+}
+
+.itemCenter .itemCenterRight .profiles .avatar {
+    width: 78px;      
+    height: 78px;         
+    border-radius: 50%;  
+    border: #cbc8c8 1px solid;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.itemCenter .itemCenterRight .profiles .avt {
+    width: 68px;      
+    height: 68px;        
+    object-fit: cover;  
+    border-radius: 50%;  
+    overflow: hidden;  
+}
+
+.itemCenterRight .profiles .adressPhone {
+    display:flex;
+    justify-content: space-between;
+}
+
+.itemCenterRight .adressPhone  button i {
+    color:#405FF2;
+}
+
+.itemCenterRight .adressPhone button {
+    width:40px;
+    border:none;
+    padding:8px;
+    border-radius: 50%;
+    background-color: rgba(64, 95, 242, 0.1);
+}
+
+.itemCenterRight .profiles > button {
+    width:100%;
+    height:55px;
+    margin-top: 30px;
+    border-radius: 25px;
+    transition: transform 0.5s ease;
+}
+
+.itemCenterRight .profiles .message {
+    border: none;
+    background-color: #405FF2;
+    color:#FFFFFF;
+}
+
+.itemCenterRight .profiles button:hover {
+    transform: scale(0.95);
+}
+
+.itemCenterRight .profiles .whatsapp {
+    border:2px #60C961 solid;
+    background:none;
+    color:#60C961;
+}
+
+.itemCenterRight .profiles .viewall {
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.itemCenterRight .profiles .viewall a {
+    text-decoration: none;
+    color:#050B20;
+}
+
+.itemCenterRight .profiles a img ,
+.itemCenterRight .profiles .message img ,
+.itemCenterRight .profiles .whatsapp img  {
+    width: 14px;
+    margin-left:8px;
+}
+
+
+
+
+
+
+
+
+
+
+

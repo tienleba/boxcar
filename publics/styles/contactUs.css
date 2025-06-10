@@ -1,0 +1,84 @@
+.header .headerDesk {
+    padding:10px 20px !important;
+}
+
+.itemCenterLeft .textInputBottom {
+    width:90.5%;
+    margin:10px 0 0 10px;
+}
+
+textarea::placeholder {
+    color: #000;
+}
+
+.itemCenterRight {
+    display:block !important;
+}
+
+.itemCenterRight .details {
+    margin-top:60px;
+    padding:30px;
+    border-radius: 20px;
+    border: 1px #e2dede solid;
+}
+
+.itemCenterRight .details  .itemDetails {
+    margin-top:17px;
+    display: flex;
+    gap:10px;
+}
+
+.details  .itemDetails2 .link {
+    display:flex;
+    gap:30px;
+    margin-top:10px;
+}
+
+.details  .itemDetails2 .link a i {
+    color: #000;
+}
+
+.itemBottom {
+    margin:40px 0 0 10px;
+}
+
+.itemBottom h2 {
+    margin-bottom: 40px;
+}
+
+.itemBottom .item {
+    display: flex;
+}
+
+.itemBottom .miniItemBottom {
+    padding:0 80px 0 0;
+}
+
+.itemBottom .miniItemBottom p  {
+    margin-bottom:0.5rem !important;
+}
+
+.itemBottom .miniItemBottom a  {
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+}
+
+.itemBottom .miniItemBottom .mailPhone {
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+@media (max-width: 992px) {
+    .itemBottom .miniItemBottom {
+        margin-bottom:50px;
+        padding:0;
+    }
+
+    .miniItemBottom .mailPhone .mail ,
+    .miniItemBottom .mailPhone .phone {
+        font-size: 12px !important;
+    }
+}
+

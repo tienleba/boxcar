@@ -1,0 +1,137 @@
+.loginContainer {
+    padding: 40px;
+    border-radius: 10px;
+    width: 468px;
+    margin: 50px auto;
+}
+
+.tabButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 2px #ccc solid;
+}
+
+.tabButtons button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tabButtons button.active {
+    border-bottom: 2px solid #405FF2;
+    font-weight: 600;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.formGroup p {
+    position: absolute;
+    top:6px;
+    left:10px;
+    color: #818181;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 30px 10px 3px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.formGroup input::placeholder {
+    color: #050B20;
+}
+
+.formOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formOptions a {
+    font-weight: 700;
+}
+
+.btnLogin {
+    background: #405FF2;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #ccc;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider span {
+    background: #fff;
+    padding: 0 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+.socialLogin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialLogin button {
+    flex: 1;
+    padding: 15px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 14px;
+    background:none;
+}
+
+.demoBox {
+    background: #f1f1f1;
+    padding: 25px 10px 10px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* mobile */
+
+@media (max-width: 768px) { 
+    .loginContainer {
+        width: 320px;
+        padding:0;
+    }
+}
