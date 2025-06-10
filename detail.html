@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <!-- Link Swiper's CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./publics/styles/main.css">
+    <link rel="stylesheet" href="./publics/styles/detail.css">
+    <!-- Bootstrap 5 CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="headerDesk row col-12">
+            <div class="headerLeft row col-3 align-items-center">
+                <a href="home.html" class="logo col-4">
+                    <img src="./publics/images/logo.png" alt="Logo">
+                </a>
+                <div class="phone col-8 row">
+                    <img class="col-3" src="./publics/images/iconphone.png" alt="">
+                    <p class="col-9">+75 123 456 789</p>
+                </div>
+            </div>
+            <div class="HeaderMenu row col-7 align-items-center">
+                <ul class="nav mainNav col-10">
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="home.html">Home1</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Home2</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Home2</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Listings</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="list.html">Listing V1</a></li><hr>
+                            <li><a class="dropdown-item" href="shopCar.html">Shop Car</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Listing V3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Blogs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blogs 1</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Blogs 2</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Blogs 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="faqspage.html">Pages 1</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Pages 2</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Pages 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem"><a class="navLink" href="about.html">About</a></li>
+                    <li class="navItem"><a class="navLink" href="contactUs.html">Contact</a></li>
+                </ul>
+                <a href="login.html" class="signin col-2" style="text-decoration: none;">Sign In</a>
+            </div>
+            <div class="headerRight row col-2 align-items-center justify-content-end">
+                <button class="SubmitListing">Submit Listing</button>
+            </div>
+        </div>
+        <div class="headerMobile">
+            <a href="home.html" class="logoMobile col-4">
+                <img src="./publics/images/logo.png" alt="Logo">
+            </a>
+            <div class="col-1"></div>
+            <div class="SubmitListingMob col-5">
+                <button class="SubmitListing">Submit Listing</button>
+            </div>
+            <div class="col-1"></div>
+            <div class="btnMenuMobile col-1">
+                <div class="itemMenu top"></div>
+                <div class="itemMenu center"></div>
+                <div class="itemMenu bottom"></div>
+            </div>
+            <div class="menuMove">
+                <ul>
+                   <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Home</a>
+                        <ul class="subMenu">
+                            <li><a href="home.html">Home1</a></li><hr>
+                            <li><a href="#">Home2</a></li><hr>
+                            <li><a href="#">Home3</a></li>
+                        </ul>
+                    </li><hr>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Listings</a>
+                        <ul class="subMenu">
+                            <li><a href="list.html">Listings V1</a></li><hr>
+                            <li><a href="shopCar.html">Shop Car</a></li><hr>
+                            <li><a href="#">Listings V3</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Blogs</a>
+                        <ul class="subMenu">
+                            <li><a href="blog.html">Blogs V1</a></li><hr>
+                            <li><a href="faqspage.html">FAQ</a></li><hr>
+                            <li><a href="#">Blogs V3</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Pages</a>
+                        <ul class="subMenu">
+                            <li><a href="faqspage.html">Pages 1</a></li><hr>
+                            <li><a href="calculator.html">Loan Calculator</a></li><hr>
+                            <li><a href="services.html">Services</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem"><a class="navLink" href="about.html">About</a></li><hr>
+                    <li class="navItem"><a class="navLink" href="contactUs.html">Contact</a></li><hr>
+                     <li class="navItem"><a href="login.html" class="navLink">Sign In</a></li><hr>
+                </ul>
+            </div>
+       </div>
+    </header> 
+    <main>
+        <div class="itemMain">
+            <div class="path"  data-aos="fade-right" data-aos-duration="2300">
+                <a href="home.html">Home</a> / <a href="list.html">Listing v1</a>  / Toyota Camry New
+            </div>
+            <div class="itemTop col-12 row">
+                <div class="itemTopLeft col-12 col-md-6">
+                    <h1  data-aos="fade-right" data-aos-duration="2600">Toyota Camry New</h1>
+                    <p  data-aos="fade-right" data-aos-duration="2600">3.5 D5 PowerPulse Momentum 5dr AWD Geartronic Estate</p>
+                    <div class="button row" data-aos="fade-right" data-aos-duration="2600">
+                        <button>
+                            <img src="./publics/images/year2.png" alt="">
+                            2023
+                        </button>
+                        <button>
+                            <img src="./publics/images/mile2.png" alt="">
+                            20 miles
+                        </button>
+                        <button>
+                            <img src="./publics/images/matic2.png" alt="">
+                            Automatic
+                        </button>
+                        <button>
+                            <img src="./publics/images/petrol.png" alt="">
+                            Petrol
+                        </button>
+                    </div>
+                </div>
+                <div class="itemTopRight col-12 col-md-6" data-aos="fade-left" data-aos-duration="2600">
+                    <div class="itemButton">
+                        <div class="button">
+                            Share 
+                            <button><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                        </div>
+                        <div class="button">
+                            Save
+                            <button><i class="far fa-bookmark"></i></button>
+                        </div>
+                        <div class="button">
+                            Compare
+                            <button><i class="fa-solid fa-file-lines"></i></button>
+                        </div>
+                    </div>
+                    <h2>$40,000</h2>  
+                    <h5><i class="fa-solid fa-thumbtack"></i>  Make An Offer Price</h5>  
+                </div>
+            </div>
+            <div class="imageCenter row col-12">
+                <div class="imageLeft col-12 col-md-7" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="./publics/images/listxe1png.png" alt="" width="100%">
+                    <button id="openVideoBtn" style="display: flex;align-items: center;justify-content: center;"> <img src="./publics/images/Iconvideo.png" alt="" width="17px" style="margin-right:5px;"> Video</button>
+                </div>
+                <div class="imageRight col-12 col-md-5 row">
+                    <div class="imageRight1 col-6" data-aos="fade-down" data-aos-duration="2000">
+                        <img src="./publics/images/listxe1png.png" alt="">
+                    </div>
+                     <div class="imageRadius1 imageRight1 col-6" data-aos="fade-left" data-aos-duration="2000">
+                        <img  src="./publics/images/xè.png" alt="">
+                    </div>
+                     <div class="imageRight1 imageRadius3 col-6" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="./publics/images/xè.png" alt="">
+                    </div>
+                     <div class="imageRadius2 imageRight1 col-6" data-aos="fade-left" data-aos-duration="2000">
+                        <img  src="./publics/images/listxe1png.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="itemCenter col-12 row">
+                <div class="itemCenterLeft col-md-8 col-12">
+                    <div class="carOverview" data-aos="fade-right" data-aos-duration="2000">
+                        <h2>Car Overview</h2>
+                        <div class="itemCarOverview row">
+                            <ul class="col-12 col-sm-6">
+                                <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Iconbody.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Body</p>
+                                    </div>
+                                    <strong class="col-6">Sedan</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Iconmile.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Mileage</p>
+                                    </div>
+                                    <strong class="col-6">20</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/IconFute.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Fuel Type</p>
+                                    </div>
+                                    <strong class="col-6">Petrol</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Iconyear.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Year</p>
+                                    </div>
+                                    <strong class="col-6">2023</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Iconmisson.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Transmission</p>
+                                    </div>
+                                    <strong class="col-6">Automatic</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Icondrive.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Drive Type</p>
+                                    </div>
+                                    <strong class="col-6">All-Wheel Drive (AWD/4WD)</strong>
+                                </li>
+                            </ul>
+                            <ul class="col-12 col-sm-6">
+                                <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Icondition.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Condition</p>
+                                    </div>
+                                    <strong class="col-6">New</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Iconsize.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Engine Size</p>
+                                    </div>
+                                    <strong class="col-6">3.5</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Icondoor.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Door</p>
+                                    </div>
+                                    <strong class="col-6">4 Doors</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/Iconcilyn.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Cylinder</p>
+                                    </div>
+                                    <strong class="col-6">12</strong>
+                                </li>
+                                 <li>
+                                    <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/IconColor.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">Color</p>
+                                    </div>
+                                    <strong class="col-6">Black , Blue , White</strong>
+                                </li>
+                                 <li>
+                                     <div class="col-6" style="display: flex; align-items: flex-start; gap: 10px;">
+                                        <img src="./publics/images/IconVin.png" alt="" style="width: 9%; display: block;">
+                                        <p style="margin: 0;">VIN</p>
+                                    </div>
+                                    <strong class="col-6">MCB123818</strong>
+                                </li>
+                            </ul>
+                        </div><hr>
+                        <div class="description" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>Description</h2>
+                            <p class="itemDescription">
+                                Quisque imperdiet dignissim enim dictum finibus. Sed consectetutr convallis enim eget laoreet. Aenean vitae nisl mollis, porta risus
+                                vel, dapibus lectus. Etiam ac suscipit eros, eget maximus,<br>
+                                Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                pellentesque. Sed venenatis risus nec felis mollis, in pharetra urna euismod. Morbi aliquam ut turpis sit amet ultrices. Vestibulum
+                                mattis blandit nisl, et tristique elit scelerisque nec. Fusce eleifend laoreet dui eget aliquet. Ut rutrum risus et nunc pretium scelerisque.<br>
+                                Quisque imperdiet dignissim enim dictum finibus. Sed consectetutr convallis enim eget laoreet. Aenean vitae nisl mollis, porta risus
+                                vel, dapibus lectus. Etiam ac suscipit eros, eget maximus,<br>
+                                Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                pellentesque. Sed venenatis risus nec felis mollis, in pharetra urna euismod. Morbi aliquam ut turpis sit amet ultrices. Vestibulum
+                                mattis blandit nisl, et tristique elit scelerisque nec. Fusce eleifend laoreet dui eget aliquet. Ut rutrum risus et nunc pretium scelerisque.
+                                 Quisque imperdiet dignissim enim dictum finibus. Sed consectetutr convallis enim eget laoreet. Aenean vitae nisl mollis, porta risus
+                                vel, dapibus lectus. Etiam ac suscipit eros, eget maximus,<br>
+                                Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                pellentesque. Sed venenatis risus nec felis mollis, in pharetra urna euismod. Morbi aliquam ut turpis sit amet ultrices. Vestibulum
+                                mattis blandit nisl, et tristique elit scelerisque nec. Fusce eleifend laoreet dui eget aliquet. Ut rutrum risus et nunc pretium scelerisque.<br>
+                                Quisque imperdiet dignissim enim dictum finibus. Sed consectetutr convallis enim eget laoreet. Aenean vitae nisl mollis, porta risus
+                                vel, dapibus lectus. Etiam ac suscipit eros, eget maximus,<br>
+                                Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                pellentesque. Sed venenatis risus nec felis mollis, in pharetra urna euismod. Morbi aliquam ut turpis sit amet ultrices. Vestibulum
+                                mattis blandit nisl, et tristique elit scelerisque nec. Fusce eleifend laoreet dui eget aliquet. Ut rutrum risus et nunc pretium scelerisque.
+                            </p>
+                            <div class="buttonDescription">
+                                <button><img src="./publics/images/iconpdf.png" alt="" width="17.6px" style="margin-right:8px;"> Schedule-Test-Drive.pdf</button>
+                                <button><img src="./publics/images/iconpdf.png" alt="" width="17.6px" style="margin-right:8px;"> Car-Brochure.pdf</button>
+                            </div>
+                        </div><hr>
+                        <div class="features" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>Features</h2>
+                            <div class="itemFeatures row">
+                                <ul class="col-12 col-md-2">
+                                    <li>
+                                        <h3>Interior</h3>
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Air Conditioner</li> 
+                                    <li><i class="fas fa-check"></i> Digital Odometer</li> 
+                                    <li><i class="fas fa-check"></i> Heater</li> 
+                                    <li><i class="fas fa-check"></i> Leather Seats</li>
+                                    <li><i class="fas fa-check"></i> Panoramic Moonroof</li>
+                                    <li><i class="fas fa-check"></i> Tachometer</li>
+                                    <li><i class="fas fa-check"></i> Touchscreen Display</li>
+                                </ul>
+                                <ul class="col-12 col-md-2">
+                                    <li>
+                                        <h3>Safety</h3>
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Anti-lock Braking</li> 
+                                    <li><i class="fas fa-check"></i> Brake Assist</li> 
+                                    <li><i class="fas fa-check"></i> Child Safety Locks</li> 
+                                    <li><i class="fas fa-check"></i> Driver Air Bag</li>
+                                    <li><i class="fas fa-check"></i> Power Door Locks</li>
+                                    <li><i class="fas fa-check"></i> Stability Control</li>
+                                    <li><i class="fas fa-check"></i> Traction Control</li>
+                                </ul>
+                                <ul class="col-12 col-md-2">
+                                    <li>
+                                        <h3>Exterior</h3>
+                                    </li>
+                                    <li><i class="fas fa-check"></i>  Fog Lights Front</li> 
+                                    <li><i class="fas fa-check"></i> Rain Sensing Wiper</li> 
+                                    <li><i class="fas fa-check"></i> Rear Spoiler</li> 
+                                    <li><i class="fas fa-check"></i> Windows - Electric</li>
+                                </ul>
+                                <ul class="col-12 col-md-2">
+                                    <li>
+                                        <h3>Comfort & Convenience</h3>
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Android Auto</li> 
+                                    <li><i class="fas fa-check"></i> Apple CarPlay</li> 
+                                    <li><i class="fas fa-check"></i> Bluetooth</li> 
+                                    <li><i class="fas fa-check"></i> HomeLink</li>
+                                    <li><i class="fas fa-check"></i> Power Steering</li>
+                                </ul>
+                            </div>
+                        </div><hr>
+                        <div class="dimensions" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>Dimensions & Capacity</h2>
+                            <div class="itemCarOverview">
+                                <ul class="col-6">
+                                    <li>
+                                        <p class="col-9">Length</p>
+                                        <strong class="col-3">4950mm</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Height</p>
+                                        <strong class="col-3">1550mm</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Wheelbase</p>
+                                        <strong class="col-3">2580mm</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Height (including roof rails)</p>
+                                        <strong class="col-3">1850mm</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Luggage Capacity (Seats Up - Litres)</p>
+                                        <strong class="col-3">480</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Luggage Capacity (Seats Down - Litres)</p>
+                                        <strong class="col-3">850</strong>
+                                    </li>
+                                </ul>
+                                <ul class="col-6">
+                                    <li>
+                                        <p class="col-9">Width</p>
+                                        <strong class="col-3">2100mm</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Width (including mirrors)</p>
+                                        <strong class="col-3">2140mm</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Gross Vehicle Weight (kg)</p>
+                                        <strong class="col-3">1550</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Max. Loading Weight (kg)</p>
+                                        <strong class="col-3">1200</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Max. Roof Load (kg)r</p>
+                                        <strong class="col-3">400</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">No. of Seats</p>
+                                        <strong class="col-3">5</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><hr>
+                        <div class="engine" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>Engine and Transmission</h2>
+                            <div class="itemCarOverview">
+                                <ul class="col-6">
+                                    <li>
+                                        <p class="col-9">Fuel Tank Capacity (Litres)</p>
+                                        <strong class="col-3">80</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Max. Towing Weight - Braked (kg)</p>
+                                        <strong class="col-3">1000</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Max. Towing Weight - Unbraked (kg)</p>
+                                        <strong class="col-3">1100</strong>
+                                    </li>
+                                </ul>
+                                <ul class="col-6">
+                                    <li>
+                                        <p class="col-9">Minimum Kerbweight (kg)</p>
+                                        <strong class="col-3">350</strong>
+                                    </li>
+                                    <li>
+                                        <p class="col-9">Turning Circle - Kerb to Kerb (m)</p>
+                                        <strong class="col-3">6500</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><hr>
+                        <div class="location" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>Location</h2>
+                            <p>329 Kent Ave, Brooklyn</p>
+                            <a href="#">Get Direction</a>
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0418121875616!2d105.802064!3d21.0278454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9f07337671%3A0x3738d875d489a9a5!2sVINICORP%20-%20Viet%20Nhat%20General%20JSC!5e0!3m2!1svi!2s!4v1716261224123!5m2!1svi!2s"
+                            width="100%" height="450" style="border:0; border-radius: 15px;margin:30px 0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div><hr>
+                        <form class="calculator" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>Financing Calculator</h2>
+                            <div class="itemInput row">
+                                <div class="inputItem">
+                                        <p>Price ($)</p>
+                                        <input type="text" placeholder="10000">
+                                </div>
+                                <div class="inputItem">
+                                    <p>Interest Rate</p>
+                                    <input type="text" placeholder="10">
+                                </div>
+                                <div class="inputItem">
+                                    <p>Loan Term (year)</p>
+                                     <input type="text" placeholder="3">
+                                </div>
+                                <div class="inputItem">
+                                    <p>Down Payment</p>
+                                    <input type="text" placeholder="50">
+                                </div>
+                            </div>
+                            <button type="submit">Calculate <img src="./publics/images/icondieuhuongcalculate.png" alt="" style=" width:14px;margin-left: 8px;"></button>
+                        </form><hr>
+                        <div class="reviews" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>2 Reviews</h2>
+                            <div class="reviewsTop row">
+                                <div class="progress-container col-12 col-xl-4">
+                                    <svg width="200" height="200">
+                                        <circle
+                                        cx="100"
+                                        cy="100"
+                                        r="90"
+                                        stroke="#e5e7eb"
+                                        stroke-width="15"
+                                        fill="none"
+                                        />
+                                        <circle
+                                        cx="100"
+                                        cy="100"
+                                        r="90"
+                                        stroke="#3b82f6"
+                                        stroke-width="15"
+                                        fill="none"
+                                        stroke-dasharray="565.48"
+                                        stroke-dashoffset="56.55" 
+                                        stroke-linecap="round"
+                                        />
+                                    </svg>
+                                    <div class="progress-text">
+                                        <div class="label">Overall Rating</div>
+                                        <div class="value">4.5</div>
+                                        <div class="label">Out of 5</div>
+                                    </div>
+                                </div>
+                                <ul class="col-12 col-xl-4 topReview1">
+                                    <li>
+                                        <div class="itemLeft">
+                                            <h5>Comfort</h5>
+                                            <p>Perfect</p>
+                                        </div>
+                                        <div class="itemRight">
+                                           <span>★</span> 5.0
+                                        </div>
+                                    </li><hr>
+                                       <li>
+                                        <div class="itemLeft">
+                                            <h5>Exterior Styling</h5>
+                                            <p>Perfect</p>
+                                        </div>
+                                        <div class="itemRight">
+                                           <span>★</span> 5.0
+                                        </div>
+                                    </li><hr>
+                                       <li>
+                                        <div class="itemLeft">
+                                            <h5>Performance</h5>
+                                            <p>Perfect</p>
+                                        </div>
+                                        <div class="itemRight">
+                                           <span>★</span> 5.0
+                                        </div>
+                                    </li><hr>
+                                </ul>
+                                <ul class="col-12 col-xl-4 topReview2">
+                                    <li>
+                                        <div class="itemLeft">
+                                            <h5>Interior Design</h5>
+                                            <p>Perfect</p>
+                                        </div>
+                                        <div class="itemRight">
+                                           <span>★</span> 4.5
+                                        </div>
+                                    </li><hr>
+                                       <li>
+                                        <div class="itemLeft">
+                                            <h5>Value For The Money</h5>
+                                            <p>Perfect</p>
+                                        </div>
+                                        <div class="itemRight">
+                                           <span>★</span> 5.0
+                                        </div>
+                                    </li><hr>
+                                       <li>
+                                        <div class="itemLeft">
+                                            <h5>Reliability</h5>
+                                            <p>Perfect</p>
+                                        </div>
+                                        <div class="itemRight">
+                                           <span>★</span> 4.5
+                                        </div>
+                                    </li><hr>
+                                </ul>
+                            </div>
+                            <div class="reviewsBottom">
+                                <div class="itemCmt">
+                                    <div class="imgItemCmt">
+                                        <img src="./publics/images/avt1.png" alt="" width="100%">
+                                        <h5>Demo</h5>
+                                        <h6>November 30, 2023</h6>
+                                    </div>
+                                    <div class="starRating">
+                                        <div class="starRatingLeft">
+                                            <div class="starRatingBackground">
+                                                ★★★★★
+                                            </div>
+                                            <div class="starRatingForeground" style="width: 90%;">
+                                                ★★★★★
+                                            </div>
+                                        </div>
+                                        <span class="starRatingValue">4.7</span>
+                                    </div>
+                                    <p>Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                        pellentesque. Sed venenatis risus nec felis mollis.
+                                    </p>
+                                </div>
+                                <div class="itemCmt">
+                                    <div class="imgItemCmt">
+                                        <img src="./publics/images/avt1.png" alt="" width="100%">
+                                        <h5>Demo</h5>
+                                        <h6>November 30, 2023</h6>
+                                    </div>
+                                    <div class="starRating">
+                                        <div class="starRatingLeft">
+                                            <div class="starRatingBackground">
+                                                ★★★★★
+                                            </div>
+                                            <div class="starRatingForeground" style="width: 100%;">
+                                                ★★★★★
+                                            </div>
+                                        </div>
+                                        <span class="starRatingValue">4.7</span>
+                                    </div>
+                                    <p>Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                        pellentesque. Sed venenatis risus nec felis mollis.
+                                    </p>
+                                </div>
+                                <div class="itemCmt">
+                                    <div class="imgItemCmt">
+                                        <img src="./publics/images/avt1.png" alt="" width="100%">
+                                        <h5>Demo</h5>
+                                        <h6>November 30, 2023</h6>
+                                    </div>
+                                    <div class="starRating">
+                                        <div class="starRatingLeft">
+                                            <div class="starRatingBackground">
+                                                ★★★★★
+                                            </div>
+                                            <div class="starRatingForeground" style="width: 100%;">
+                                                ★★★★★
+                                            </div>
+                                        </div>
+                                        <span class="starRatingValue">4.7</span>
+                                    </div>
+                                    <p>Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                        pellentesque. Sed venenatis risus nec felis mollis.
+                                    </p>
+                                </div>
+                                <div class="itemCmt">
+                                    <div class="imgItemCmt">
+                                        <img src="./publics/images/avt1.png" alt="" width="100%">
+                                        <h5>Demo</h5>
+                                        <h6>November 30, 2023</h6>
+                                    </div>
+                                    <div class="starRating">
+                                        <div class="starRatingLeft">
+                                            <div class="starRatingBackground">
+                                                ★★★★★
+                                            </div>
+                                            <div class="starRatingForeground" style="width: 100%;">
+                                                ★★★★★
+                                            </div>
+                                        </div>
+                                        <span class="starRatingValue">4.7</span>
+                                    </div>
+                                    <p>Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, non cursus augue placerat
+                                        pellentesque. Sed venenatis risus nec felis mollis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><hr>
+                        <div class="addReview" data-aos="fade-right" data-aos-duration="2000">
+                            <h2>Add a review</h2>
+                            <div class="itemAddReview">
+                                <ul>
+                                    <li>
+                                        <p>Comfort</p>
+                                        <p style="color:#405FF2;"> ★★★★★</p>
+                                    </li>
+                                    <li>
+                                        <p>Exterior Styling</p>
+                                        <p style="color:#405FF2;"> ★★★★★</p>
+                                    </li>
+                                    <li>
+                                        <p>Performance</p>
+                                        <p style="color:#405FF2;"> ★★★★★</p>
+                                    </li>
+                                </ul>
+                                 <ul>
+                                    <li>
+                                        <p>Interior Design</p>
+                                        <p style="color:#405FF2;"> ★★★★★</p>
+                                    </li>
+                                    <li>
+                                        <p>Value For The Money</p>
+                                        <p style="color:#405FF2;"> ★★★★★</p>
+                                    </li>
+                                    <li>
+                                        <p>Reliability</p>
+                                        <p style="color:#405FF2;"> ★★★★★</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="textInput">
+                                <div class="textInputTop">
+                                    <div class="inputItem">
+                                        <p>Name</p>
+                                        <input type="text" placeholder="Ali...">
+                                    </div>
+                                    <div class="inputItem">
+                                        <p>Email</p>
+                                        <input type="text" placeholder="Example...">
+                                    </div>
+                                </div>
+                                <div class="checkBox">
+                                    <input type="checkbox" id="saveInfo">
+                                    <label for="saveInfo">
+                                        Save my name, email, and website in this browser for the next time I comment.
+                                    </label>
+                                </div>
+                                <div class="textInputBottom">
+                                    <textarea placeholder="Review"></textarea>
+                                </div>
+                            </div>
+                            <button>Submit Review</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemCenterRight col-md-4 col-12" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="profiles">
+                        <div class="avatar">
+                             <div class="avt">
+                                <img src="./publics/images/avt1.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <h5>admin</h5>
+                        <p>943 Broadway, Brooklyn</p>
+                        <div class="adressPhone">
+                            <div class="adress">
+                                <button>
+                                    <img src="./publics/images/iconlication.png" alt="" width="18px">
+                                </button>
+                                Get Direction
+                            </div>
+                            <div class="phone">
+                                <button>
+                                    <img src="./publics/images/iconphonepng.png" alt="" width="18px">
+                                </button>
+                                +88-123456789
+                            </div>
+                        </div>
+                        <button class="message">
+                            Message <img src="./publics/images/icondieuhuongcalculate.png" alt="">
+                        </button>
+                        <button class="whatsapp">
+                            Whatsapp <img src="./publics/images/icondieuhuongwathapp.png" alt="">
+                        </button>
+                        <div class="viewall">
+                            <a href="#">View All stock at this dealer <img src="./publics/images/icondieuhuong.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relateList">
+                <div class="title col-12">
+                    <h2 class="col-6" data-aos="fade-right" data-aos-duration="2000">Related Listings</h2>
+                    <a class="col-6" data-aos="fade-left" data-aos-duration="22000" href="#">View All <i class="fas fa-arrow-up-right-from-square" style="color:black;"></i></a>
+                </div>
+
+                <div class="swiper itemRelateList">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="miniItemList" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="imgAvt">
+                                <img src="./publics/images/avtxe1.png" alt="" width="100%">
+                                </div>
+                                <button class="buttonItemList1">Great Price</button>
+                                <button class="buttonItemList2"><i class="far fa-bookmark"></i></button>
+                                <div class="miniList">
+                                <h5>Toyota Camry New</h5>
+                                <p>3.5 D5 PowerPulse Momentum 5dr AW Geartronic Estate</p><hr>
+                                <div class="texture">
+                                    <div class="itemTexture"><img src="./publics/images/Iconmille.png" alt=""><p>20 Miles</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/pretro.png" alt=""><p>Petrol</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/iconmatic.png" alt=""><p>Automatic</p></div>
+                                </div><hr>
+                                <div class="miListBottom">
+                                    <div class="money">
+                                        <del>$40,000</del>
+                                        <h5>$15,000</h5>
+                                    </div>
+                                    <a href="#">View Details <img src="./publics/images/icondieuhuonglist.png" alt="" ></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="miniItemList" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="imgAvt">
+                                <img src="./publics/images/avtxe1.png" alt="" width="100%">
+                                </div>
+                                <button class="buttonItemList1">Great Price</button>
+                                <button class="buttonItemList2"><i class="far fa-bookmark"></i></button>
+                                <div class="miniList">
+                                <h5>Toyota Camry New</h5>
+                                <p>3.5 D5 PowerPulse Momentum 5dr AW Geartronic Estate</p><hr>
+                                <div class="texture">
+                                    <div class="itemTexture"><img src="./publics/images/Iconmille.png" alt=""><p>20 Miles</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/pretro.png" alt=""><p>Petrol</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/iconmatic.png" alt=""><p>Automatic</p></div>
+                                </div><hr>
+                                <div class="miListBottom">
+                                     <div class="money">
+                                        <del></del>
+                                        <h5>$15,000</h5>
+                                    </div>
+                                    <a href="#">View Details <img src="./publics/images/icondieuhuonglist.png" alt="" ></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="miniItemList" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="imgAvt">
+                                <img src="./publics/images/avtxe1.png" alt="" width="100%">
+                                </div>
+                                <button class="buttonItemList1">Great Price</button>
+                                <button class="buttonItemList2"><i class="far fa-bookmark"></i></button>
+                                <div class="miniList">
+                                <h5>Toyota Camry New</h5>
+                                <p>3.5 D5 PowerPulse Momentum 5dr AW Geartronic Estate</p><hr>
+                                <div class="texture">
+                                    <div class="itemTexture"><img src="./publics/images/Iconmille.png" alt=""><p>20 Miles</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/pretro.png" alt=""><p>Petrol</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/iconmatic.png" alt=""><p>Automatic</p></div>
+                                </div><hr>
+                                <div class="miListBottom">
+                                     <div class="money">
+                                        <del>$40,000</del>
+                                        <h5>$15,000</h5>
+                                    </div>
+                                    <a href="#">View Details <img src="./publics/images/icondieuhuonglist.png" alt="" ></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="miniItemList" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="imgAvt">
+                                <img src="./publics/images/avtxe1.png" alt="" width="100%">
+                                </div>
+                                <button class="buttonItemList1">Great Price</button>
+                                <button class="buttonItemList2"><i class="far fa-bookmark"></i></button>
+                                <div class="miniList">
+                                <h5>Toyota Camry New</h5>
+                                <p>3.5 D5 PowerPulse Momentum 5dr AW Geartronic Estate</p><hr>
+                                <div class="texture">
+                                    <div class="itemTexture"><img src="./publics/images/Iconmille.png" alt=""><p>20 Miles</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/pretro.png" alt=""><p>Petrol</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/iconmatic.png" alt=""><p>Automatic</p></div>
+                                </div><hr>
+                                <div class="miListBottom">
+                                     <div class="money">
+                                        <del>$40,000</del>
+                                        <h5>$15,000</h5>
+                                    </div>
+                                    <a href="#">View Details <img src="./publics/images/icondieuhuonglist.png" alt="" ></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="miniItemList" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="imgAvt">
+                                <img src="./publics/images/avtxe1.png" alt="" width="100%">
+                                </div>
+                                <button class="buttonItemList1">Great Price</button>
+                                <button class="buttonItemList2"><i class="far fa-bookmark"></i></button>
+                                <div class="miniList">
+                                <h5>Toyota Camry New</h5>
+                                <p>3.5 D5 PowerPulse Momentum 5dr AW Geartronic Estate</p><hr>
+                                <div class="texture">
+                                    <div class="itemTexture"><img src="./publics/images/Iconmille.png" alt=""><p>20 Miles</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/pretro.png" alt=""><p>Petrol</p></div>
+                                    <div class="itemTexture"><img src="./publics/images/iconmatic.png" alt=""><p>Automatic</p></div>
+                                </div><hr>
+                                <div class="miListBottom">
+                                    <div class="money">
+                                        <del>$40,000</del>
+                                        <h5>$15,000</h5>
+                                    </div>
+                                    <a href="#">View Details <img src="./publics/images/icondieuhuonglist.png" alt="" ></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-prev"><</div>
+                    <div class="custom-next">></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerTop row col-12">
+            <div class="footerTopLeft col-12 col-lg-6">
+                <h3>Join BoxCar</h3>
+                <p>Receive pricing updates, shopping tips & more!</p>
+            </div>
+            <div class="footerTopRight col-12 col-lg-6">
+                <div class="joinBoxCar">
+                    <input type="text" placeholder="Your email address">
+                    <button>
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div><hr>
+        <div class="footerBetween col-12 row">
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>   
+                    <li><a href="#">Blog</a></li> 
+                    <li><a href="#">Services</a></li> 
+                    <li><a href="#">FAQs</a></li> 
+                    <li><a href="#">Terms</a></li> 
+                    <li><a href="#">Contact Us</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Get in Touch</a></li>   
+                    <li><a href="#">Help center</a></li> 
+                    <li><a href="#">Live chat</a></li> 
+                    <li><a href="#">How it works</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Our Brands</h5>
+                <ul>
+                    <li><a href="#">Toyota</a></li>   
+                    <li><a href="#">Porsche</a></li> 
+                    <li><a href="#">Audi</a></li> 
+                    <li><a href="#">BMW</a></li> 
+                    <li><a href="#">Ford</a></li> 
+                    <li><a href="#">Nissan</a></li>
+                    <li><a href="#">Peugeot</a></li>
+                    <li><a href="#">Volkswagen</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Vehicles Type</h5>
+                <ul>
+                    <li><a href="#">Sedan</a></li>   
+                    <li><a href="#">Hatchback</a></li> 
+                    <li><a href="#">SUV</a></li> 
+                    <li><a href="#">Hybrid</a></li> 
+                    <li><a href="#">Electric</a></li> 
+                    <li><a href="#">Coupe</a></li> 
+                    <li><a href="#">Truck</a></li> 
+                    <li><a href="#">Convertible</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-1 itemFooterBetween"></div>
+            <div class="col-lg-3 col-12 itemFooterBetween">
+                <h5>Our Mobile App</h5>
+                <div class="dowloadApp">
+                    <button>
+                        <img src="./publics/images/chplay.png" alt="">
+                        <div class="text">
+                            <p>Get in on</p>
+                            <h6>Google Play</h6>
+                        </div>
+                    </button>
+                     <button>
+                        <img src="./publics/images/apple.png" alt="">
+                        <div class="text">
+                            <p>Get in on</p>
+                            <h6>Apple Store</h6>
+                        </div>
+                    </button>
+                </div>
+                <h5 class="connectUs">Connect With Us</h5>
+                <div class="connect">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div><hr>
+        <div class="footerBottom col-12">
+            <p class="reserve col-6">© 2024 exemple.com. All rights reserved.</p>
+            <p class="conditions col-6">Terms & Conditions ● Privacy Notice
+        </div>
+    </footer >
+    <a href="#" class="topStart">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <div id="popupVideo" class="popupVideo">
+        <div class="videoContent">
+            <button class="closeBtn">&times;</button>
+            <video id="myVideo" width="100%" controls>
+                <source src="./publics/video/BMW M4 - -Ultimate Racetrack-.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ video.
+            </video>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btnMenuMobile").click(function () {
+                $(".btnMenuMobile").toggleClass("active");
+                $(".menuMove").toggleClass("active");
+                $('body').toggleClass('active');
+                $('html').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('.toggleSubMenu').click(function (e) {
+                e.preventDefault();
+                const $currentSubMenu = $(this).next('.subMenu');
+                $('.subMenu').not($currentSubMenu).slideUp();
+                $currentSubMenu.slideToggle();
+            });
+        });
+
+        $(document).ready(function () {
+            // Khi nhấn nút mở
+            $('#openVideoBtn').on('click', function () {
+                $('#popupVideo').addClass('active');
+                $('#myVideo')[0].play();
+                $('body').css('overflow', 'hidden'); 
+            });
+
+            // Khi nhấn dấu X
+            $('.closeBtn').on('click', function () {
+                closePopupVideo();
+            });
+
+            // Khi nhấn ra ngoài nội dung video
+            $('#popupVideo').on('click', function (e) {
+                if (!$(e.target).closest('.videoContent').length) {
+                    closePopupVideo();
+                }
+            });
+
+            // Hàm đóng popup và dừng video
+            function closePopupVideo() {
+                let video = $('#myVideo')[0];
+                video.pause();
+                video.currentTime = 0;
+                $('#popupVideo').removeClass('active');
+                $('body').css('overflow', 'auto');
+            }
+        });
+
+        const swiper = new Swiper('.itemRelateList', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
+            },
+            breakpoints: {
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            992: { slidesPerView: 4 }
+            }
+        });
+        
+
+        AOS.init();
+    </script>
+</body>
+</html>

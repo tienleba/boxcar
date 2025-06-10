@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link Swiper's CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./publics/styles/main.css">
+     <link rel="stylesheet" href="./publics/styles/home.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 JS (cho dropdown hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="headerDesk row col-12">
+            <div class="headerLeft row col-3 align-items-center">
+                <a href="home.html" class="logo col-4">
+                    <img src="./publics/images/logo.png" alt="Logo">
+                </a>
+                <div class="phone col-8 row">
+                    <img class="col-3" src="./publics/images/iconphone.png" alt="">
+                    <p class="col-9">+75 123 456 789</p>
+                </div>
+            </div>
+            <div class="HeaderMenu row col-7 align-items-center">
+                <ul class="nav mainNav col-10">
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="home.html">Home1</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Home2</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Home2</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Listings</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="list.html">Listing V1</a></li><hr>
+                            <li><a class="dropdown-item" href="shopCar.html">Shop Car</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Listing V3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Blogs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blogs 1</a></li><hr>
+                            <li><a class="dropdown-item"  href="faqspage.html">FAQ</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Blogs 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="faqspage.html">Pages</a></li><hr>
+                            <li><a class="dropdown-item" href="calculator.html">Loan Calculator</a></li><hr>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem"><a class="navLink" href="about.html">About</a></li>
+                    <li class="navItem"><a class="navLink" href="contactUs.html">Contact</a></li>
+                </ul>
+                <a href="login.html" class="signin col-2" style="text-decoration: none;">Sign In</a>
+            </div>
+            <div class="headerRight row col-2 align-items-center justify-content-end">
+                <button class="SubmitListing">Submit Listing</button>
+            </div>
+        </div>
+        <div class="headerMobile">
+            <a href="home.html" class="logoMobile col-4">
+                <img src="./publics/images/logo.png" alt="Logo">
+            </a>
+            <div class="col-1"></div>
+            <div class="SubmitListingMob col-5">
+                <button class="SubmitListing">Submit Listing</button>
+            </div>
+            <div class="col-1"></div>
+            <div class="btnMenuMobile col-1">
+                <div class="itemMenu top"></div>
+                <div class="itemMenu center"></div>
+                <div class="itemMenu bottom"></div>
+            </div>
+            <div class="menuMove">
+                <ul>
+                   <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Home</a>
+                        <ul class="subMenu">
+                            <li><a href="home.html">Home1</a></li><hr>
+                            <li><a href="#">Home2</a></li><hr>
+                            <li><a href="#">Home3</a></li>
+                        </ul>
+                    </li><hr>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Listings</a>
+                        <ul class="subMenu">
+                            <li><a href="list.html">Listings V1</a></li><hr>
+                            <li><a href="shopCar.html">Shop Car</a></li><hr>
+                            <li><a href="#">Listings V3</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Blogs</a>
+                        <ul class="subMenu">
+                            <li><a href="blog.html">Blogs V1</a></li><hr>
+                            <li><a href="faqspage.html">FAQ</a></li><hr>
+                            <li><a href="#">Blogs V3</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Pages</a>
+                        <ul class="subMenu">
+                            <li><a href="faqspage.html">Pages 1</a></li><hr>
+                            <li><a href="calculator.html">Loan Calculator</a></li><hr>
+                            <li><a href="services.html">Services</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem"><a class="navLink" href="about.html">About</a></li><hr>
+                    <li class="navItem"><a class="navLink" href="contactUs.html">Contact</a></li><hr>
+                     <li class="navItem"><a href="login.html" class="navLink">Sign In</a></li><hr>
+                </ul>
+            </div>
+       </div>
+    </header>    
+    <main>
+        <div class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide slideBanner">
+                    <div class="banner">
+                        <img src="./publics/images/banner1.png" />
+                    </div>
+                    <div class="content">
+                        <div class="contentLeft">
+                            <h3>$165,000</h3>
+                            <h1 class="limitedText">Ranger Black - 2021 </h1>
+                        </div>
+                        <div class="contentRight">
+                            <div class="itemContentRight">
+                                <img src="./publics/images/fuel tank.png" alt="">
+                                <p>Fuel Type</p>
+                                <h6>Petrol</h6>
+                            </div>
+                            <div  class="itemContentRight">
+                                <img src="./publics/images/clock.png" alt="">
+                                <p>Mileage</p>
+                                <h6>250 Miles</h6>
+                            </div>
+                            <div  class="itemContentRight">
+                                <img src="./publics/images/IconTransmission.png" alt="">
+                                <p>Transmission</p>
+                                <h6>Manual</h6>
+                            </div>
+                            <div  class="itemContentRight">
+                                <img src="./publics/images/Year.png" alt="">
+                                <p>Year</p>
+                                <h6>2021</h6>
+                            </div>
+                            <div  class="itemContentRight">
+                                <button>
+                                    Learn More 
+                                    <img src="./publics/images/icondieuhuong.png" alt="" >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slideBanner">
+                    <div class="banner">
+                        <img src="./publics/images/banner2.png" />
+                    </div>
+                        <div class="content">
+                            <div class="contentLeft">
+                                <h3>$165,000</h3>
+                                <h1 class="limitedText">Ranger Black - 2022 </h1>
+                            </div>
+                            <div class="contentRight">
+                                <div class="itemContentRight">
+                                    <img src="./publics/images/fuel tank.png" alt="">
+                                    <p>Fuel Type</p>
+                                    <h6>Petrol</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <img src="./publics/images/clock.png" alt="">
+                                    <p>Mileage</p>
+                                    <h6>250 Miles</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <img src="./publics/images/IconTransmission.png" alt="">
+                                    <p>Transmission</p>
+                                    <h6>Manual</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <img src="./publics/images/Year.png" alt="">
+                                    <p>Year</p>
+                                    <h6>2021</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <button>
+                                        Learn More 
+                                        <img src="./publics/images/icondieuhuong.png" alt="" >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slideBanner">
+                        <div class="banner">
+                        <img src="./publics/images/banner3.png" />
+                    </div>
+                        <div class="content">
+                            <div class="contentLeft">
+                                <h3>$165,000</h3>
+                                <h1 class="limitedText">Ranger Black - 2023 </h1>
+                            </div>
+                            <div class="contentRight">
+                                <div class="itemContentRight">
+                                    <img src="./publics/images/fuel tank.png" alt="">
+                                    <p>Fuel Type</p>
+                                    <h6>Petrol</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <img src="./publics/images/clock.png" alt="">
+                                    <p>Mileage</p>
+                                    <h6>250 Miles</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <img src="./publics/images/IconTransmission.png" alt="">
+                                    <p>Transmission</p>
+                                    <h6>Manual</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <img src="./publics/images/Year.png" alt="">
+                                    <p>Year</p>
+                                    <h6>2021</h6>
+                                </div>
+                                <div  class="itemContentRight">
+                                    <button>
+                                        Learn More 
+                                        <img src="./publics/images/icondieuhuong.png" alt="" >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="itemmain">
+            <div class="exploreAllVehicles">
+                <div class="title col-12">
+                    <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000">Explore All Vehicles</h2>
+                    <a class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="22000" href="#">View All <img src="./publics/images/icondieuhuong.png" alt="" ></a>
+                </div>
+                <br>
+                <ul class="nav nav-tabs" role="tablist" data-aos="fade-right" data-aos-duration="2000">
+                    <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#inStock">In Stock</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#newCars">New Cars</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#usedCars">Used Cars</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tabContent tab-content" data-aos="fade-right" data-aos-duration="2000">
+                    <div id="inStock" class=" tab-pane active">
+                        <div class="swiper swiperInStock">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <button><i class="far fa-bookmark"></i></button> 
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slideInsock">
+                                    <div class="image">
+                                        <img src="./publics/images/avtxe1.png" alt="">
+                                    </div>
+                                    <button><i class="far fa-bookmark"></i></button>
+                                    <div class="itemSlideInsock">
+                                        <h6>T-Cross - 2023</h6>
+                                        <p>4.0 D5 PowerPulse Momentum 5dr AWD PowerPulse Momentum</p>   
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/clock.png" alt="">
+                                            <p>15 Miles</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/fuel tank.png" alt="">
+                                            <p>Petrol</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock">
+                                            <img src="./publics/images/IconTransmission.png" alt="">
+                                            <p>CVT</p>
+                                        </div>
+                                        <div class="miniItemSlideInsock2 miniItemSlideInsock">
+                                            <p class="col-6">$15,000</p>
+                                            <a href="#" class="col-6">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-next custom-next1">></div>
+                            <div class="custom-prev custom-prev1"><</div>
+                        </div>
+                    </div>
+                    <div id="newCars" class="container tab-pane fade"><br>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="usedCars" class="container tab-pane fade"><br>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="whyChooseUs" data-aos="fade-up" data-aos-duration="2000">
+                <h2>Why Choose Us?</h2>  
+                <div class="itemWhyChooseUs col-12 row">
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/iconfill.png" alt="">
+                        <h5>Special Financing Offers</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/fill2.png" alt="">
+                        <h5>Trusted Car Dealership</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/fill3.png" alt="">
+                        <h5>Transparent Pricing</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/fill4.png" alt="">
+                        <h5>Expert Car Service</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="browseByType">
+                <div class="title col-12">
+                    <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000">Browse by Type</h2>
+                    <a href="#" class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="2000">View All <img src="./publics/images/icondieuhuong.png" alt="" ></a>
+                </div>
+                <div class="itemBrowseByType">
+                    <div class="itemBrowseByTypeTop">
+                        <div class="miniIiem" data-aos="fade-down-right" data-aos-duration="2000">
+                            <img class="imgMiniIiem" src="./publics/images/suv.png" alt="" width="100%">
+                            <button>
+                                <img src="./publics/images/iconsuv.png" alt="">
+                                SUV
+                            </button>
+                        </div>
+                        <div class="miniIiem" data-aos="fade-down-left" data-aos-duration="2000">
+                            <img class="imgMiniIiem" src="./publics/images/sedan.png" alt="" width="100%">
+                            <button>
+                                <img src="./publics/images/iconsuv.png" alt="">
+                                Sedan
+                            </button>
+                        </div>
+                    </div>
+                    <div class="itemBrowseByTypeBottom">
+                        <div class="miniIiem" data-aos="fade-up-right" data-aos-duration="2000">
+                            <img class="imgMiniIiem" src="./publics/images/hatchback.png" alt="" width="100%">
+                            <button>
+                                <img src="./publics/images/iconhactchback.png" alt="">
+                               Hatchback
+                            </button>
+                        </div>
+                        <div class="miniIiem" data-aos="fade-up" data-aos-duration="2000">
+                            <img class="imgMiniIiem" src="./publics/images/hybrld.png" alt="" width="100%">
+                            <button>
+                                <img src="./publics/images/iconhybirt.png" alt="">
+                                Hybrid
+                            </button>
+                        </div>
+                        <div class="miniIiem" data-aos="fade-up-left" data-aos-duration="2000">
+                            <img class="imgMiniIiem" src="./publics/images/cuupe.png" alt="" width="100%">
+                            <button>
+                                <img src="./publics/images/iconcoupe.png" alt="">
+                                Coupe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBrowseByTypeMob">
+                    <div class="miniIiem" data-aos="fade-right" data-aos-duration="2000">
+                        <img class="imgMiniIiem" src="./publics/images/suv.png" alt="" width="100%">
+                        <button>
+                            <img src="./publics/images/iconsuv.png" alt="">
+                            SUV
+                        </button>
+                    </div>
+                    <div class="miniIiem" data-aos="fade-left" data-aos-duration="2000">
+                        <img class="imgMiniIiem" src="./publics/images/sedan.png" alt="" width="100%">
+                            <button>
+                            <img src="./publics/images/iconsuv.png" alt="">
+                            Sedan
+                        </button>
+                    </div>
+                    <div class="miniIiem" data-aos="fade-right" data-aos-duration="2000">
+                        <img class="imgMiniIiem" src="./publics/images/suv.png" alt="" width="100%">
+                        <button>
+                            <img src="./publics/images/iconsuv.png" alt="">
+                            Hatchback
+                        </button>
+                    </div>
+                    <div class="miniIiem" data-aos="fade-right" data-aos-duration="2000">
+                        <img class="imgMiniIiem" src="./publics/images/suv.png" alt="" width="100%">
+                        <button>
+                            <img src="./publics/images/iconsuv.png" alt="">
+                            Hybrid
+                        </button>
+                    </div>
+                    <div class="miniIiem" data-aos="fade-left" data-aos-duration="2000">
+                        <img class="imgMiniIiem" src="./publics/images/sedan.png" alt="" width="100%">
+                            <button>
+                            <img src="./publics/images/iconsuv.png" alt="">
+                             Coupe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="shopBoxCar">
+                <div class="title col-12">
+                    <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000">Shop BoxCar Your Way</h2>
+                    <a class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="2000" href="#">View All <img src="./publics/images/icondieuhuong.png" alt="" ></a>
+                </div>
+                <br>
+                <ul class="nav nav-tabs" role="tablist" data-aos="fade-right" data-aos-duration="2000">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#newCarsForSale">New Cars For Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#usedCarsForSale">Used Cars For Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#browseByType">Browse By Type</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#browseByBrand">Browse By Brand</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tabContent tab-content" data-aos="fade-right" data-aos-duration="2000">
+                    <div id="newCarsForSale" class=" tab-pane active">
+                        <div class="itemTabContent col-12 row">
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                                <li><a href="#">Ford Cars</a></li>
+                                <li><a href="#">Honda Cars</a></li>
+                                <li><a href="#">Hyundai Cars</a></li>
+                                <li><a href="#">Infiniti Cars</a></li>
+                                <li><a href="#">Jaguar Cars</a></li>
+                                <li><a href="#">Jeep Cars</a></li>
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                                <li><a href="#">Chrysler Cars</a></li>
+                                <li><a href="#">Citroen Cars</a></li>
+                                <li><a href="#">Cupra Cars</a></li>
+                                <li><a href="#">Dacia Cars</a></li>
+                                <li><a href="#">DS Cars</a></li>
+                                <li><a href="#">Fiat Cars</a></li>
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                                <li><a href="#">Land Rover Cars</a></li>
+                                <li><a href="#">Lexus Cars</a></li>
+                                <li><a href="#">Mercedes-Benz Cars</a></li>
+                                <li><a href="#">Mazda Cars</a></li>
+                                <li><a href="#">MG Cars</a></li>
+                                <li><a href="#">Kia Cars</a></li>
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                                <li><a href="#">Abarth Cars</a></li>
+                                <li><a href="#">Romeo Cars</a></li>
+                                <li><a href="#">Audi Cars</a></li>
+                                <li><a href="#">Bentley Cars</a></li>
+                                <li><a href="#">BMW Cars</a></li>
+                                <li><a href="#">Chevrolet Cars</a></li>
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                                <li><a href="#">Mini Cars</a></li>
+                                <li><a href="#">Mitsubishi Cars</a></li>
+                                <li><a href="#">Nissan Cars</a></li>
+                                <li><a href="#">Peugeot Cars</a></li>
+                                <li><a href="#">Porsche Cars</a></li>
+                                <li><a href="#">Renault Cars</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="usedCarsForSale" class=" tab-pane active">
+                        <div class="itemTabContent col-12 row">
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                              
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                               
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                               
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                              
+                            </ul>
+                            <ul class="miniItemTabConten col-6 col-md-2">
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="browseByType" class="container tab-pane active">
+                        <div class="itemTabContent col-12">
+                            <ul class="miniItemTabConten col-2">
+                                
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                            
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                            
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                                
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="browseByBrand" class="container tab-pane active">
+                        <div class="itemTabContent col-12">
+                            <ul class="miniItemTabConten col-2">
+                                
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                            
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                            
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                                
+                            </ul>
+                            <ul class="miniItemTabConten col-2">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="premiumBrands">
+                <div class="title col-12">
+                    <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000">Explore Our Premium Brands</h2>
+                    <a class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="2000" href="#">View All <img src="./publics/images/icondieuhuong.png" alt="" ></a>
+                </div>
+                <div class="itemPremiumBrands row" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="#" >
+                        <img src="./publics/images/logoAudi.png" alt="" width="40%">
+                        <h6>Audi</h6>
+                    </a> 
+                    <a href="#" >
+                        <img src="./publics/images/logoBmw.png" alt="" width="40%">
+                        <h6>BMW</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logoFord.png" alt="" width="40%">
+                        <h6>Ford</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logoMec.png" alt="" width="40%">
+                        <h6>Mercedes Benz</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logpeu.png" alt="" width="40%">
+                        <h6>Peugeot</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logovolk.png" alt="" width="40%">
+                        <h6>Volkswagen</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="loanCalculator"  data-aos="fade-up" data-aos-duration="2000">
+                <form class="loanCalLeft">
+                    <h2 data-aos="fade-right" data-aos-duration="2000">Auto Loan Calculator</h2>
+                    <p data-aos="fade-right" data-aos-duration="2400">Use this car payment calculator to estimate monthly payments on your next new or
+                        used auto loan.</p>
+                    <div data-aos="fade-right" data-aos-duration="2600" class="inputLoancal">
+                        <div class="inputLoan">
+                            <p>Price ($)</p>
+                            <input type="text" placeholder="10000">
+                        </div>
+                        <div class="inputLoan">
+                            <p>Interest Rate</p>
+                            <input type="text" placeholder="10">
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="2800" class="inputLoancal">
+                        <div class="inputLoan">
+                            <p>Loan Term (year)</p>
+                            <input type="number" placeholder="3">
+                        </div>
+                        <div class="inputLoan">
+                            <p>Down Payment</p>
+                            <input type="text" placeholder="5000">
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="3000" class="buttonLoancal">
+                        <button type="submit">Calculate <img src="./publics/images/icondieuhuongcalculate.png" alt=""></button> 
+                    </div>  
+                </form>
+                <div data-aos="fade-up" data-aos-duration="2000" class="loanCalRight">
+                    <img src="./publics/images/LoanCua.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="cusSay">
+                <div class="title col-12">
+                    <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000">What our customers say</h2>
+                    <p class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="2000">Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
+                </div>
+                <div class="itemCusSay"  data-aos="fade-up" data-aos-duration="2000">
+                    <div class="swiper swiperCusSay">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slideCusSay">
+                                <div class="itemSlide">
+                                    <div class="itemSlideTop">
+                                        <div class="topLeft">
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/voteactve.png" alt="" class="voteActive" >
+                                            </div>
+                                            <div class="voteCusSay">
+                                                <img src="./publics/images/vote.png" alt="" class="vote" >
+                                            </div>
+                                        </div>
+                                        <div class="topRight">
+                                            <img src="./publics/images/iconVeri.png" alt="">
+                                            Verified
+                                        </div>
+                                    </div>
+                                    <div class="itemSlideBottom">
+                                        <h6>Sales process was simple and easy</h6>
+                                        <p>Sales process was simple and easy.
+                                            Maximillion was friendly and I didn’t feel.Maximillion was friendly and I didn’t feel.
+                                        </p>
+                                        <h6>Ali Tufan</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-next custom-next2">></div>
+                        <div class="custom-prev custom-prev2"><</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ourTeam">
+                <div class="title col-12">
+                    <h2 class="col-6" data-aos="fade-right" data-aos-duration="2000" >Our Team</h2>
+                    <a class="col-6" href="#" data-aos="fade-left" data-aos-duration="2000" >View All <img src="./publics/images/icondieuhuong.png" alt="" ></a>
+                </div>
+                <div class="itemOurTeam row" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt1.png" alt="" width="100%">
+                        <h5>Courtney Henry</h5>
+                        <p>Development Manager</p>
+                    </a>
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt2.png" alt="" width="100%">
+                        <h5>Jerome Bell</h5>
+                        <p>Software Tester</p>
+                    </a>
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt3.png" alt="" width="100%">
+                        <h5>Arlene McCoy</h5>
+                        <p>Software Developer</p>
+                    </a>
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt4.png" alt="" width="100%">
+                        <h5>Jenny Wilson</h5>
+                        <p>UI/UX Designer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="shopUsedCars">
+                <img src="./publics/images/BackgroundShop.png" alt="" width="100%">
+                <div class="itemShopUsedCars">
+                    <div class="miniItem">
+                         <h2 data-aos="fade-right" data-aos-duration="2000">Shop used cars, whether you're on the lot or on the go</h2>
+                        <p data-aos="fade-right" data-aos-duration="2500">Download our app to save cars and create alerts, scan window stickers on our lot for more details,
+                            and even call dibs on a car by holding it for up to 7 days.
+                        </p>
+                        <div class="buttonShop" data-aos="fade-right" data-aos-duration="3000">
+                            <button>
+                                <img src="./publics/images/buttondowios.png" alt="" width="100%">
+                            </button>  
+                            <button>
+                                <img src="./publics/images/buttondowandrouid.png" alt="" width="100%">
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="title col-12">
+                    <h2 class="col-6" data-aos="fade-right" data-aos-duration="2000">Latest Blog Posts</h2>
+                    <a class="col-6" href="#" data-aos="fade-left" data-aos-duration="2000">View All <img src="./publics/images/icondieuhuong.png" alt="" ></a>
+                </div>
+                <div class="itemBlog row" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="#" class="miniItemBlog">
+                        <img src="./publics/images/xe1.png" alt="">
+                        <div class="textCenter">
+                            admin <span>•</span> November 22, 2023
+                        </div>
+                        <h5>2024 BMW ALPINA XB7 with exclusive details, extraordinary</h5>
+                    </a>
+                    <a href="#" class="miniItemBlog">
+                        <img src="./publics/images/xè.png" alt="">
+                        <div class="textCenter">
+                            admin <span>•</span> November 22, 2023
+                        </div>
+                        <h5>BMW X5 Gold 2024 Sport Review: Light on Sport</h5>
+                    </a>
+                    <a href="#" class="miniItemBlog">
+                        <img src="./publics/images/xe3.png" alt="">
+                        <div class="textCenter">
+                            admin <span>•</span> November 22, 2023
+                        </div>
+                        <h5>BMW X6 M50i is designed to exceed your sportiest.</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerTop row col-12">
+            <div class="footerTopLeft col-12 col-lg-6">
+                <div class="logo">
+                    <img src="./publics/images/logo.png" alt="">
+                </div>
+                <div class="intro">
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt<br>
+                       in culpa qui officia deserunt mollit anim id es
+                    </p>
+                </div>
+                <div class="buttonIntro row">
+                    <button>
+                        <img src="./publics/images/iconphone.png" alt="">
+                        <p>+75 123 456 789</p>
+                    </button>
+                    <button>
+                        <img src="./publics/images/email.png" alt="">
+                        <p>ali@boxcars.com</p>
+                    </button>
+                </div>
+            </div>
+            <div class="footerTopRight col-12 col-lg-6">
+                <div class="joinBoxCar">
+                    <h3>Join BoxCar</h3>
+                    <p>Receive pricing updates, shopping tips & more!</p>
+                    <input type="text" placeholder="Your email address">
+                    <button>
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div><hr>
+        <div class="footerBetween col-12 row">
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>   
+                    <li><a href="#">Blog</a></li> 
+                    <li><a href="#">Services</a></li> 
+                    <li><a href="#">FAQs</a></li> 
+                    <li><a href="#">Terms</a></li> 
+                    <li><a href="#">Contact Us</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Get in Touch</a></li>   
+                    <li><a href="#">Help center</a></li> 
+                    <li><a href="#">Live chat</a></li> 
+                    <li><a href="#">How it works</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Our Brands</h5>
+                <ul>
+                    <li><a href="#">Toyota</a></li>   
+                    <li><a href="#">Porsche</a></li> 
+                    <li><a href="#">Audi</a></li> 
+                    <li><a href="#">BMW</a></li> 
+                    <li><a href="#">Ford</a></li> 
+                    <li><a href="#">Nissan</a></li>
+                    <li><a href="#">Peugeot</a></li>
+                    <li><a href="#">Volkswagen</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Vehicles Type</h5>
+                <ul>
+                    <li><a href="#">Sedan</a></li>   
+                    <li><a href="#">Hatchback</a></li> 
+                    <li><a href="#">SUV</a></li> 
+                    <li><a href="#">Hybrid</a></li> 
+                    <li><a href="#">Electric</a></li> 
+                    <li><a href="#">Coupe</a></li> 
+                    <li><a href="#">Truck</a></li> 
+                    <li><a href="#">Convertible</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-1 itemFooterBetween"></div>
+            <div class="col-lg-3 col-12 itemFooterBetween">
+                <h5>Our Mobile App</h5>
+                <div class="dowloadApp">
+                    <button>
+                        <img src="./publics/images/chplay.png" alt="">
+                        <div class="text">
+                            <p>Get in on</p>
+                            <h6>Google Play</h6>
+                        </div>
+                    </button>
+                     <button>
+                        <img src="./publics/images/apple.png" alt="">
+                        <div class="text">
+                            <p>Get in on</p>
+                            <h6>Apple Store</h6>
+                        </div>
+                    </button>
+                </div>
+                <h5 class="connectUs">Connect With Us</h5>
+                <div class="connect">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div><hr>
+        <div class="footerBottom col-12">
+            <p class="reserve col-6">© 2024 exemple.com. All rights reserved.</p>
+            <p class="conditions col-6">Terms & Conditions ● Privacy Notice
+        </div>
+    </footer >
+    <a href="#" class="topStart">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        $(document).ready(function () {
+            $(".btnMenuMobile").click(function () {
+                $(".btnMenuMobile").toggleClass("active");
+                $(".menuMove").toggleClass("active");
+                $('body').toggleClass('active');
+                $('html').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('.toggleSubMenu').click(function (e) {
+                e.preventDefault();
+                const $currentSubMenu = $(this).next('.subMenu');
+                $('.subMenu').not($currentSubMenu).slideUp();
+                $currentSubMenu.slideToggle();
+            });
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return `<div class="${className} custom-bullet"></div>`;
+                },
+            },
+        });
+
+        var swiper = new Swiper(".swiperInStock", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".custom-next1",
+                prevEl: ".custom-prev1",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: "auto",
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".swiperCusSay", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+              navigation: {
+                nextEl: ".custom-next2",
+                prevEl: ".custom-prev2",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                460: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
+        });
+
+        AOS.init();
+    </script>
+</body>
+</html>

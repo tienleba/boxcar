@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Link Swiper's CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./publics/styles/main.css">
+    <link rel="stylesheet" href="./publics/styles/home.css">
+    <link rel="stylesheet" href="./publics/styles/detail.css">
+    <link rel="stylesheet" href="./publics/styles/about.css">
+        <link rel="stylesheet" href="./publics/styles/faqspage.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 JS (cho dropdown hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="headerDesk row col-12">
+            <div class="headerLeft row col-3 align-items-center">
+                <a href="home.html" class="logo col-4">
+                    <img src="./publics/images/logo.png" alt="Logo">
+                </a>
+                <div class="phone col-8 row">
+                    <img class="col-3" src="./publics/images/iconphone.png" alt="">
+                    <p class="col-9">+75 123 456 789</p>
+                </div>
+            </div>
+            <div class="HeaderMenu row col-7 align-items-center">
+                <ul class="nav mainNav col-10">
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="home.html">Home1</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Home2</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Home2</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Listings</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="list.html">Listing V1</a></li><hr>
+                            <li><a class="dropdown-item" href="shopCar.html">Shop Car</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Listing V3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Blogs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blogs 1</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Blogs 2</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Blogs 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem dropdown">
+                        <a class="navLink dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="faqspage.html">Pages 1</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Pages 2</a></li><hr>
+                            <li><a class="dropdown-item" href="#">Pages 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="navItem"><a class="navLink" href="#">About</a></li>
+                    <li class="navItem"><a class="navLink" href="contactUs.html">Contact</a></li>
+                </ul>
+                <a href="login.html" class="signin col-2" style="text-decoration: none;">Sign In</a>
+            </div>
+            <div class="headerRight row col-2 align-items-center justify-content-end">
+                <button class="SubmitListing">Submit Listing</button>
+            </div>
+        </div>
+        <div class="headerMobile">
+            <a href="home.html" class="logoMobile col-4">
+                <img src="./publics/images/logo.png" alt="Logo">
+            </a>
+            <div class="col-1"></div>
+            <div class="SubmitListingMob col-5">
+                <button class="SubmitListing">Submit Listing</button>
+            </div>
+            <div class="col-1"></div>
+            <div class="btnMenuMobile col-1">
+                <div class="itemMenu top"></div>
+                <div class="itemMenu center"></div>
+                <div class="itemMenu bottom"></div>
+            </div>
+            <div class="menuMove">
+                <ul>
+                   <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Home</a>
+                        <ul class="subMenu">
+                            <li><a href="home.html">Home1</a></li><hr>
+                            <li><a href="#">Home2</a></li><hr>
+                            <li><a href="#">Home3</a></li>
+                        </ul>
+                    </li><hr>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Listings</a>
+                        <ul class="subMenu">
+                            <li><a href="list.html">Listings V1</a></li><hr>
+                            <li><a href="shopCar.html">Shop Car</a></li><hr>
+                            <li><a href="#">Listings V3</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Blogs</a>
+                        <ul class="subMenu">
+                            <li><a href="blog.html">Blogs V1</a></li><hr>
+                            <li><a href="faqspage.html">FAQ</a></li><hr>
+                            <li><a href="#">Blogs V3</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink toggleSubMenu" href="#">Pages</a>
+                        <ul class="subMenu">
+                            <li><a href="faqspage.html">Pages 1</a></li><hr>
+                            <li><a href="calculator.html">Loan Calculator</a></li><hr>
+                            <li><a href="services.html">Services</a></li>
+                        </ul><hr>
+                    </li>
+                    <li class="navItem"><a class="navLink" href="about.html">About</a></li><hr>
+                    <li class="navItem"><a class="navLink" href="contactUs.html">Contact</a></li><hr>
+                     <li class="navItem"><a href="login.html" class="navLink">Sign In</a></li><hr>
+                </ul>
+            </div>
+       </div>
+    </header>    
+    <main>
+        <div class="itemMain">
+            <div class="path"  data-aos="fade-right" data-aos-duration="2300">
+                <a href="home.html">Home</a>/ Listing v1
+            </div>
+            <h2  data-aos="fade-right" data-aos-duration="2300">About Us</h2>
+            <div class="itemTop row">
+                <div class="itemTopLeft col-12 col-md-6" data-aos="fade-right" data-aos-duration="2300">
+                    <h2>We Value Our Clients And
+                        Want Them To Have A Nice
+                        Experience
+                    </h2>
+                </div>
+                <div class="itemTopRight col-12 col-md-6" data-aos="fade-left" data-aos-duration="2300">
+                    <p>Lorem ipsum dolor sit amet consectetur. Convallis integer enim eget sit urna. Eu duis lectus amet
+                        vestibulum varius. Nibh tellus sit sit at lorem facilisis. Nunc vulputate ac interdum aliquet
+                        vestibulum in tellus.<br>
+                        Sit convallis rhoncus dolor purus amet orci urna. Lobortis vulputate vestibulum consectetur donec
+                        ipsum egestas velit laoreet justo. Eu dignissim egestas egestas ipsum. Sit est nunc pellentesque at
+                        a aliquam ultrices consequat. Velit duis velit nec amet eget eu morbi. Libero non diam sit viverra
+                        dignissim. Aliquam tincidunt in cursus euismod enim.<br>
+                        Magna odio sed ornare ultrices. Id lectus mi amet sit at sit arcu mi nisl. Mauris egestas arcu mauris.
+                    </p>
+                </div>
+            </div>
+            <div class="itemImage">
+                <div class="left">
+                    <div class="leftTop"  data-aos="fade-right" data-aos-duration="2300">
+                        <h1 id="counter">45</h1> <br>
+                        <h3>Years in<br>
+                        Business</h3>
+                    </div>
+                    <div class="leftBottom" data-aos="fade-up" data-aos-duration="2300">
+                        <img src="./publics/images/avt1.png" alt="">
+                    </div>
+                </div>
+                <div class="center" data-aos="fade-up" data-aos-duration="2400">
+                    <img src="./publics/images/about1.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="rightTop" data-aos="fade-up" data-aos-duration="2500">
+                        <img src="./publics/images/about2.png" alt="">
+                    </div>
+                    <div class="rightBottom" data-aos="fade-up" data-aos-duration="2600">
+                        <div class="rightBottomLeft">
+                            <img src="./publics/images/avt1.png" alt="">
+                        </div>
+                        <div class="rightBottomRight">
+                            <img src="./publics/images/about2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="whyChooseUs" data-aos="fade-up" data-aos-duration="2000">
+                <h2>Why Choose Us?</h2>  
+                <div class="itemWhyChooseUs col-12 row">
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/iconfill.png" alt="">
+                        <h5>Special Financing Offers</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/fill2.png" alt="">
+                        <h5>Trusted Car Dealership</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/fill3.png" alt="">
+                        <h5>Transparent Pricing</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                    <div class="miniItemWhyChooseUs col-md-3 col-6">
+                        <img src="./publics/images/fill4.png" alt="">
+                        <h5>Expert Car Service</h5>
+                        <p>Our stress-free finance department that can
+                        find financial solutions to save you money.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="view">
+                <div class="viewTop">
+                   <div class="videoView">
+                        <!-- Ảnh bìa -->
+                        <img id="thumbnail" src="./publics/images/Background.png" alt="Thumbnail">
+
+                        <!-- Video -->
+                        <video id="myVideo" src="./publics/video/BMW M4 - -Ultimate Racetrack-.mp4" muted></video>
+
+                        <!-- Nút Start -->
+                        <button id="startBtn" class="btn-start"><img src="./publics/images/iconvideo2.png" alt="" width="22px"></button>
+
+                        <!-- Nút Stop -->
+                        <button id="stopBtn" class="btn-stop"><i class="fas fa-stop"></i></button>
+                    </div>
+                    <div class="textView">
+                        <h2  data-aos="fade-left" data-aos-duration="2000">Get A Fair Price For Your Car
+                            Sell To Us Today
+                        </h2>
+                        <p  data-aos="fade-left" data-aos-duration="2300"> We are committed to providing our customers with exceptional service, competitive
+                            pricing, and a wide range of.
+                        </p>
+                        <p data-aos="fade-left" data-aos-duration="2600" class="check-text">
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0d0d2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 13l4 4L19 7" transform="rotate(90 12 12)" />
+                                </svg>
+                            </span>
+                            We are the UK’s largest provider, with more patrols in more places
+                        </p>
+                        <p data-aos="fade-left" data-aos-duration="2600" class="check-text">
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0d0d2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 13l4 4L19 7" transform="rotate(90 12 12)" />
+                                </svg>
+                            </span>
+                            You get 24/7 roadside assistance
+                        </p>
+                        <p data-aos="fade-left" data-aos-duration="2600" class="check-text">
+                            <span class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0d0d2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 13l4 4L19 7" transform="rotate(90 12 12)" />
+                                </svg>
+                            </span>
+                             We fix 4 out of 5 cars at the roadside
+                        </p>
+                        <button  data-aos="fade-left" data-aos-duration="2900">Get Started <img src="./publics/images/icondieuhuongcalculate.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="viewBottom">
+                    <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                        <h2>823M</h2>
+                        <p>CARS FOR SALE</p>
+                    </div>
+                    <div class="item"  data-aos="fade-up" data-aos-duration="2300">
+                        <h2>823M</h2>
+                        <p>CARS FOR SALE</p>
+                    </div>
+                    <div class="item"  data-aos="fade-up" data-aos-duration="2600">
+                        <h2>823M</h2>
+                        <p>CARS FOR SALE</p>
+                    </div>
+                    <div class="item"  data-aos="fade-up" data-aos-duration="2900">
+                        <h2>823M</h2>
+                        <p>CARS FOR SALE</p>
+                    </div>
+                </div>
+            </div><hr>
+            <div class="premiumBrands">
+                <div class="title col-12">
+                    <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000">Explore Our Premium Brands</h2>
+                    <a class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="2000" href="#">View All <img src="./publics/images/icondieuhuong.png" alt="" > </a>
+                </div>
+                <div class="itemPremiumBrands row" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="#" >
+                        <img src="./publics/images/logoAudi.png" alt="" width="40%">
+                        <h6>Audi</h6>
+                    </a> 
+                    <a href="#" >
+                        <img src="./publics/images/logoBmw.png" alt="" width="40%">
+                        <h6>BMW</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logoFord.png" alt="" width="40%">
+                        <h6>Ford</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logoMec.png" alt="" width="40%">
+                        <h6>Mercedes Benz</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logpeu.png" alt="" width="40%">
+                        <h6>Peugeot</h6>
+                    </a>
+                    <a href="#" >
+                        <img src="./publics/images/logovolk.png" alt="" width="40%">
+                        <h6>Volkswagen</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="ourTeam">
+                <div class="title  col-12">
+                    <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000" >Our Team</h2>
+                    <a class="col-lg-6 col-12" href="#" data-aos="fade-left" data-aos-duration="2000" >View All <img src="./publics/images/icondieuhuong.png" alt="" > </a>
+                </div>
+                <div class="itemOurTeam row" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt1.png" alt="" width="100%">
+                        <h5>Courtney Henry</h5>
+                        <p>Development Manager</p>
+                    </a>
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt2.png" alt="" width="100%">
+                        <h5>Jerome Bell</h5>
+                        <p>Software Tester</p>
+                    </a>
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt3.png" alt="" width="100%">
+                        <h5>Arlene McCoy</h5>
+                        <p>Software Developer</p>
+                    </a>
+                    <a href="#" class="miniItemOurTeam">
+                        <img src="./publics/images/avt4.png" alt="" width="100%">
+                        <h5>Jenny Wilson</h5>
+                        <p>UI/UX Designer</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cusSay">
+            <div class="title col-12">
+                <h2 class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="2000">What our customers say</h2>
+                <p class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="2000">Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
+            </div>
+            <div class="itemCusSay"  data-aos="fade-up" data-aos-duration="2000">
+                <div class="swiper swiperCusSay">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slideCusSay">
+                            <div class="itemSlide">
+                                <div class="itemSlideTop">
+                                    <div class="topLeft">
+                                        <h5>Great Work</h5>
+                                    </div>
+                                    <div class="topRight">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                </div>
+                                <p>“Amazing design, easy to customize and a design
+                                    quality superlative account on its cloud platform for
+                                    the optimized performance. And we didn’t on our
+                                    original designs.”
+                                </p>
+                                <div class="itemSlideBottom">
+                                    <div class="avt">
+                                        <img src="./publics/images/avt1.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h5>Leslie Alexander</h5>
+                                        <p>Facebook</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slideCusSay">
+                            <div class="itemSlide">
+                                <div class="itemSlideTop">
+                                    <div class="topLeft">
+                                        <h5>Great Work</h5>
+                                    </div>
+                                    <div class="topRight">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                </div>
+                                <p>“Amazing design, easy to customize and a design
+                                    quality superlative account on its cloud platform for
+                                    the optimized performance. And we didn’t on our
+                                    original designs.”
+                                </p>
+                                <div class="itemSlideBottom">
+                                    <div class="avt">
+                                        <img src="./publics/images/avt1.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h5>Leslie Alexander</h5>
+                                        <p>Facebook</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide slideCusSay">
+                            <div class="itemSlide">
+                                <div class="itemSlideTop">
+                                    <div class="topLeft">
+                                        <h5>Great Work</h5>
+                                    </div>
+                                    <div class="topRight">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                </div>
+                                <p>“Amazing design, easy to customize and a design
+                                    quality superlative account on its cloud platform for
+                                    the optimized performance. And we didn’t on our
+                                    original designs.”
+                                </p>
+                                <div class="itemSlideBottom">
+                                    <div class="avt">
+                                        <img src="./publics/images/avt1.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h5>Leslie Alexander</h5>
+                                        <p>Facebook</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide slideCusSay">
+                            <div class="itemSlide">
+                                <div class="itemSlideTop">
+                                    <div class="topLeft">
+                                        <h5>Great Work</h5>
+                                    </div>
+                                    <div class="topRight">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                </div>
+                                <p>“Amazing design, easy to customize and a design
+                                    quality superlative account on its cloud platform for
+                                    the optimized performance. And we didn’t on our
+                                    original designs.”
+                                </p>
+                                <div class="itemSlideBottom">
+                                    <div class="avt">
+                                        <img src="./publics/images/avt1.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h5>Leslie Alexander</h5>
+                                        <p>Facebook</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide slideCusSay">
+                            <div class="itemSlide">
+                                <div class="itemSlideTop">
+                                    <div class="topLeft">
+                                        <h5>Great Work</h5>
+                                    </div>
+                                    <div class="topRight">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                </div>
+                                <p>“Amazing design, easy to customize and a design
+                                    quality superlative account on its cloud platform for
+                                    the optimized performance. And we didn’t on our
+                                    original designs.”
+                                </p>
+                                <div class="itemSlideBottom">
+                                    <div class="avt">
+                                        <img src="./publics/images/avt1.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <h5>Leslie Alexander</h5>
+                                        <p>Facebook</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-next custom-next2">></div>
+                    <div class="custom-prev custom-prev2"><</div>
+                </div>
+            </div>
+        </div>
+        <div class="faqsPage">
+            <div class="title"  data-aos="fade-down" data-aos-duration="2300">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="itemGeneral">
+                <div class="miniItemGeneral">
+                    <div class="collapses" data-aos="fade-right" data-aos-duration="2300">
+                        <div class="title">
+                            <h5>Does BoxCar own the cars I see online or are they owned by other.</h5>
+                            <button class="toggleCollapse">+</button>
+                        </div>
+                        <div class="contentCollapse" style="display: none;">
+                            Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit.
+                            Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec.
+                            Sagittis, id volutpat erat vel.
+                        </div>
+                    </div>
+                    <div class="collapses" data-aos="fade-right" data-aos-duration="2300">
+                        <div class="title">
+                            <h5>Can I save my favorite cars to a list I can view later?</h5>
+                            <button class="toggleCollapse">+</button>
+                        </div>
+                        <div class="contentCollapse" style="display: none;">
+                            Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit.
+                            Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec.
+                            Sagittis, id volutpat erat vel.
+                        </div>
+                    </div>
+                    <div class="collapses" data-aos="fade-right" data-aos-duration="2300">
+                        <div class="title">
+                            <h5>How do you choose the cars that you sell?</h5>
+                            <button class="toggleCollapse">+</button>
+                        </div>
+                        <div class="contentCollapse" style="display: none;">
+                            Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit.
+                            Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec.
+                            Sagittis, id volutpat erat vel.
+                        </div>
+                    </div>
+                    <div class="collapses" data-aos="fade-right" data-aos-duration="2300">
+                        <div class="title">
+                            <h5>Does BoxCar own the cars I see online or are they owned by other.</h5>
+                            <button class="toggleCollapse">+</button>
+                        </div>
+                        <div class="contentCollapse" style="display: none;">
+                            Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit.
+                            Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec.
+                            Sagittis, id volutpat erat vel.
+                        </div>
+                    </div>
+                    <div class="collapses" data-aos="fade-right" data-aos-duration="2300">
+                        <div class="title">
+                            <h5>Can I save my favorite cars to a list I can view later?</h5>
+                            <button class="toggleCollapse">+</button>
+                        </div>
+                        <div class="contentCollapse" style="display: none;">
+                            Cras vitae ac nunc orci. Purus amet tortor non at phasellus ultricies hendrerit.
+                            Eget a, sit morbi nunc sit id massa. Metus, scelerisque volutpat nec sit vel donec.
+                            Sagittis, id volutpat erat vel.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerTop row col-12">
+            <div class="footerTopLeft col-12 col-lg-6">
+                <h3>Join BoxCar</h3>
+                <p>Receive pricing updates, shopping tips & more!</p>
+            </div>
+            <div class="footerTopRight col-12 col-lg-6">
+                <div class="joinBoxCar">
+                    <input type="text" placeholder="Your email address">
+                    <button>
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div><hr>
+        <div class="footerBetween col-12 row">
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>   
+                    <li><a href="#">Blog</a></li> 
+                    <li><a href="#">Services</a></li> 
+                    <li><a href="#">FAQs</a></li> 
+                    <li><a href="#">Terms</a></li> 
+                    <li><a href="#">Contact Us</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Get in Touch</a></li>   
+                    <li><a href="#">Help center</a></li> 
+                    <li><a href="#">Live chat</a></li> 
+                    <li><a href="#">How it works</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Our Brands</h5>
+                <ul>
+                    <li><a href="#">Toyota</a></li>   
+                    <li><a href="#">Porsche</a></li> 
+                    <li><a href="#">Audi</a></li> 
+                    <li><a href="#">BMW</a></li> 
+                    <li><a href="#">Ford</a></li> 
+                    <li><a href="#">Nissan</a></li>
+                    <li><a href="#">Peugeot</a></li>
+                    <li><a href="#">Volkswagen</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-2 col-6 itemFooterBetween">
+                <h5>Vehicles Type</h5>
+                <ul>
+                    <li><a href="#">Sedan</a></li>   
+                    <li><a href="#">Hatchback</a></li> 
+                    <li><a href="#">SUV</a></li> 
+                    <li><a href="#">Hybrid</a></li> 
+                    <li><a href="#">Electric</a></li> 
+                    <li><a href="#">Coupe</a></li> 
+                    <li><a href="#">Truck</a></li> 
+                    <li><a href="#">Convertible</a></li> 
+                </ul>
+            </div>
+            <div class="col-lg-1 itemFooterBetween"></div>
+            <div class="col-lg-3 col-12 itemFooterBetween">
+                <h5>Our Mobile App</h5>
+                <div class="dowloadApp">
+                    <button>
+                        <img src="./publics/images/chplay.png" alt="">
+                        <div class="text">
+                            <p>Get in on</p>
+                            <h6>Google Play</h6>
+                        </div>
+                    </button>
+                     <button>
+                        <img src="./publics/images/apple.png" alt="">
+                        <div class="text">
+                            <p>Get in on</p>
+                            <h6>Apple Store</h6>
+                        </div>
+                    </button>
+                </div>
+                <h5 class="connectUs">Connect With Us</h5>
+                <div class="connect">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div><hr>
+        <div class="footerBottom col-12">
+            <p class="reserve col-6">© 2024 exemple.com. All rights reserved.</p>
+            <p class="conditions col-6">Terms & Conditions ● Privacy Notice
+        </div>
+    </footer >
+    <a href="#" class="topStart">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        $(document).ready(function () {
+            $(".btnMenuMobile").click(function () {
+                $(".btnMenuMobile").toggleClass("active");
+                $(".menuMove").toggleClass("active");
+                $('body').toggleClass('active');
+                $('html').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('.toggleSubMenu').click(function (e) {
+                e.preventDefault();
+                const $currentSubMenu = $(this).next('.subMenu');
+                $('.subMenu').not($currentSubMenu).slideUp();
+                $currentSubMenu.slideToggle();
+            });
+        });
+
+        $(document).ready(function () {
+            $('.toggleCollapse').on('click', function () {
+                const content = $(this).closest('.title').next('.contentCollapse');
+                content.slideToggle(300);
+                const current = $(this).text();
+                $(this).text(current === '+' ? '−' : '+');
+            });
+        });
+
+          $('#startBtn').on('click', function () {
+            $('#thumbnail').hide();
+            $('#myVideo').show().get(0).play();
+            $(this).hide(); 
+            $('#stopBtn').show();
+        });
+
+        $('#stopBtn').on('click', function () {
+            const video = $('#myVideo').get(0);
+            video.pause();
+            video.currentTime = 0;
+            $('#myVideo').hide();
+            $('#thumbnail').show();
+            $('#startBtn').show();
+            $(this).hide(); 
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return `<div class="${className} custom-bullet"></div>`;
+                },
+            },
+        });
+
+        var swiper = new Swiper(".swiperInStock", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+             autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".custom-next1",
+                prevEl: ".custom-prev1",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: "auto",
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+        var swiper = new Swiper(".swiperCusSay", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+              navigation: {
+                nextEl: ".custom-next2",
+                prevEl: ".custom-prev2",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                460: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
+        });
+
+        AOS.init();
+
+        $(document).ready(function () {
+            const $el = $('#counter');
+            const target = parseInt($el.text());
+            $el.text('0');
+
+            $({ countNum: 0 }).animate(
+                { countNum: target },
+                {
+                    duration: 1500, // thời gian chạy 1.5s
+                    easing: 'swing',
+                    step: function () {
+                        $el.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $el.text(target);
+                    }
+                }
+            );
+        });
+    </script>
+</body>
+</html>
